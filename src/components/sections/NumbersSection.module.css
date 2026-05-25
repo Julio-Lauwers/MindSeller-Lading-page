@@ -1,0 +1,97 @@
+.numbers {
+  background: var(--black-soft);
+  border-top: 1px solid var(--black-border);
+  border-bottom: 1px solid var(--black-border);
+}
+
+.numbersGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.numberItem {
+  padding: 60px 40px;
+  text-align: center;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+  position: relative;
+  overflow: hidden;
+}
+
+.numberItem:last-child {
+  border-right: none;
+}
+
+.numberItem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.numVal {
+  font-size: clamp(40px, 5vw, 68px);
+  font-weight: 800;
+  color: var(--gold);
+  letter-spacing: -2px;
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.numLabel {
+  font-size: 15px;
+  color: var(--white-70);
+  font-weight: 500;
+}
+
+.logosStrip {
+  margin-top: 60px;
+  padding-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.logosStrip h4 {
+  text-align: center;
+  font-size: 13px;
+  color: var(--white-40);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  font-weight: 500;
+}
+
+.logosRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  flex-wrap: wrap;
+}
+
+.logoPill {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 100px;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--white-40);
+  letter-spacing: 0.5px;
+}
+
+@media (max-width: 900px) {
+  .numbersGrid {
+    grid-template-columns: 1fr;
+  }
+  .numberItem {
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  }
+  .logosRow {
+    gap: 20px;
+  }
+}

@@ -1,0 +1,83 @@
+.ctaFinal {
+  background: var(--black-soft);
+  padding: 120px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, rgba(200, 169, 107, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.ctaH2 {
+  font-size: clamp(36px, 4vw, 58px);
+  font-weight: 900;
+  letter-spacing: -1.5px;
+  margin-bottom: 20px;
+  line-height: 1.1;
+}
+
+.ctaP {
+  font-size: 18px;
+  color: var(--white-70);
+  margin-bottom: 48px;
+}
+
+.btnWaBig {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--green-wa);
+  color: white;
+  font-size: 17px;
+  font-weight: 800;
+  padding: 22px 44px;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 16px 48px rgba(37, 211, 102, 0.3);
+}
+
+.btnWaBig:hover {
+  background: var(--green-wa-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 24px 60px rgba(37, 211, 102, 0.4);
+}
+
+.waIcon {
+  width: 26px;
+  height: 26px;
+  fill: white;
+}
+
+.ctaTrust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 48px;
+  flex-wrap: wrap;
+}
+
+.ctaTrustItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: var(--white-40);
+  font-weight: 500;
+}
+
+.ctaTrustItem span {
+  color: var(--gold);
+  font-size: 16px;
+}

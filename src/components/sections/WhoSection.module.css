@@ -1,0 +1,146 @@
+.who {
+  background: var(--black-soft);
+}
+
+.whoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.whoText h2 {
+  font-size: clamp(30px, 3vw, 44px);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+.whoText p {
+  color: var(--white-70);
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+.whoFeatures {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.whoFeature {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  transition: all 0.3s ease;
+}
+
+.whoFeature:hover {
+  background: rgba(200, 169, 107, 0.06);
+  border-color: rgba(200, 169, 107, 0.2);
+  transform: translateX(4px);
+}
+
+.whoFeatureIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: rgba(200, 169, 107, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.whoFeatureText h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.whoFeatureText p {
+  font-size: 13px;
+  color: var(--white-70);
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.platformCards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.platformCard {
+  background: var(--black-card);
+  border: 1px solid var(--black-border);
+  border-radius: 20px;
+  padding: 24px 28px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: all 0.4s ease;
+  cursor: default;
+}
+
+.platformCard:hover {
+  border-color: rgba(200, 169, 107, 0.3);
+  background: rgba(200, 169, 107, 0.04);
+  transform: translateY(-2px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.platformLogo {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.shopee {
+  background: linear-gradient(135deg, #ff6633, #ff4400);
+}
+
+.tiktok {
+  background: #010101;
+  border: 1px solid #333;
+}
+
+.ml {
+  background: linear-gradient(135deg, #ffe900, #ffb800);
+}
+
+.platformInfo h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.platformInfo p {
+  font-size: 13px;
+  color: var(--white-70);
+}
+
+.platformArrow {
+  margin-left: auto;
+  color: var(--gold);
+  opacity: 0.5;
+  font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .whoGrid {
+    grid-template-columns: 1fr;
+  }
+}
