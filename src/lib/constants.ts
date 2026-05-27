@@ -2,7 +2,7 @@
 // MINDSELLER — App Constants & Data
 // ===================================
 
-export const WA_BASE = 'https://wa.me/5531999999999'
+export const WA_BASE = 'https://wa.me/5527998211465'
 
 export const WA_LINKS = {
   default: `${WA_BASE}?text=Olá,%20quero%20saber%20mais%20sobre%20a%20Mindseller!`,
@@ -16,7 +16,6 @@ export const WA_LINKS = {
 export const NAV_LINKS = [
   { label: 'Sobre', href: '#who' },
   { label: 'Mentor', href: '#mentor' },
-  { label: 'Soluções', href: '#problems' },
   { label: 'Planos', href: '#pricing' },
   { label: 'FAQ', href: '#faq' },
 ]

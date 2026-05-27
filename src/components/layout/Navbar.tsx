@@ -5,6 +5,7 @@ import Link from 'next/link'
 import styles from './Navbar.module.css'
 import { NAV_LINKS, WA_LINKS } from '@/lib/constants'
 import MobileMenu from './MobileMenu'
+import Image from 'next/image'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
@@ -22,7 +23,13 @@ export default function Navbar() {
         <div className="container">
           <div className={styles.navInner}>
             <Link href="/" className={styles.logo}>
-              Mind<span>seller</span>
+              <Image
+                src="/LOGO MINDSELLER.png"
+                alt="MindSeller Logo"
+                width={160}
+                height={30}
+                priority
+              />   
             </Link>
 
             <div className={styles.navLinks}>

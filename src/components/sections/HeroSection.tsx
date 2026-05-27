@@ -12,17 +12,14 @@ export default function HeroSection() {
         <div className={styles.heroInner}>
           {/* LEFT */}
           <div className={styles.heroLeft}>
-            <div className={`${styles.heroBadge} fade-up`}>
-              <span className={styles.dot} />
-              Método validado · +300 alunos
-            </div>
+            
             <h1 className={`${styles.heroH1} fade-up`}>
-              Ajudamos a escalar suas vendas na{' '}
+              Ajudamos você a vender na{' '}
               <em>Shopee, TikTok Shop e Mercado Livre</em>{' '}
               com estratégia validada
             </h1>
             <p className={`${styles.heroSub} fade-up`}>
-              Mentoria e assessoria especializada para empresas e empreendedores que querem vender
+              Mentoria e assessoria especializada para começar a vender ou escalar
               mais nos marketplaces com método, dados e suporte de quem faturou milhões.
             </p>
             <ul className={`${styles.heroBullets} fade-up`}>
@@ -55,10 +52,10 @@ export default function HeroSection() {
           <div className={`${styles.heroVisual} fade-right`}>
             <div className={styles.heroImgWrap}>
               <Image
-                src="https://images.unsplash.com/photo-1664575602276-acd073f104c1?w=600&h=480&fit=crop&q=80"
+                src="/mentoria.jpeg"
                 alt="Mentor de negócios - Mindseller"
                 width={600}
-                height={480}
+                height={550}
                 priority
                 className={styles.heroImg}
               />
