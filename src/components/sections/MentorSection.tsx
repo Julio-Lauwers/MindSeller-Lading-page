@@ -10,10 +10,10 @@ export default function MentorSection() {
         <div className={styles.mentorGrid}>
           <div className={`${styles.mentorImgWrap} fade-left`}>
             <Image
-              src="/zemauro.jpeg"
+              src="/Mentor-shopee.jpeg"
               alt="Zé Mauro - Fundador da Mindseller"
               width={550}
-              height={550}
+              height={690}
               className={styles.mentorImg}
             />
             <div className={styles.mentorImgBadge}>
@@ -23,7 +23,6 @@ export default function MentorSection() {
           </div>
 
           <div className={`${styles.mentorContent} fade-right`}>
-            <SectionTag>Conheça o Mentor</SectionTag>
             <div className={styles.quote}>
               &quot;De motoboy e garçom a <em>milhões faturados</em> nos marketplaces.&quot;
             </div>

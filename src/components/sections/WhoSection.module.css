@@ -108,19 +108,6 @@
   overflow: hidden;
 }
 
-.shopee {
-  background: linear-gradient(135deg, #ff6633, #ff4400);
-}
-
-.tiktok {
-  background: #010101;
-  border: 1px solid #333;
-}
-
-.ml {
-  background: linear-gradient(135deg, #ffe900, #ffb800);
-}
-
 .platformInfo h3 {
   font-size: 18px;
   font-weight: 700;

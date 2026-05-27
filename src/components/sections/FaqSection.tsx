@@ -2,7 +2,6 @@
 
 import { useState } from 'react'
 import styles from './FaqSection.module.css'
-import SectionTag from '@/components/ui/SectionTag'
 import { FAQS } from '@/lib/constants'
 
 export default function FaqSection() {
@@ -16,7 +15,6 @@ export default function FaqSection() {
     <section id="faq" className={styles.faq}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          <SectionTag centered>FAQ</SectionTag>
           <h2 className={styles.sectionH2}>
             Perguntas <span className="gold">frequentes</span>
           </h2>

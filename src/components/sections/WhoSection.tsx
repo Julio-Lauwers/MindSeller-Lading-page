@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import styles from './WhoSection.module.css'
-import SectionTag from '@/components/ui/SectionTag'
 import { WHO_FEATURES, PLATFORMS } from '@/lib/constants'
 
 export default function WhoSection() {
@@ -9,7 +8,6 @@ export default function WhoSection() {
       <div className="container">
         <div className={styles.whoGrid}>
           <div className={`${styles.whoText} fade-left`}>
-            <SectionTag>Quem Somos</SectionTag>
             <h2>
               Especialistas em transformar lojistas em{' '}
               <span className="gold">líderes de mercado</span>

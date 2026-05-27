@@ -15,7 +15,6 @@ export default function FinalCtaSection() {
     <section id="cta-final" className={styles.ctaFinal}>
       <div className={styles.glow} />
       <div className="container" style={{ position: 'relative', zIndex: 1 }}>
-        <SectionTag centered>Próximo Passo</SectionTag>
         <h2 className={styles.ctaH2}>
           Seu negócio está pronto
           <br />

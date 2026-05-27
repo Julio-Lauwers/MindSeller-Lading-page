@@ -7,7 +7,6 @@ export default function PricingSection() {
     <section id="pricing" className={styles.pricing}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          <SectionTag centered>Investimento</SectionTag>
           <h2 className={styles.sectionH2}>
             Escolha o plano ideal para o <span className="gold">seu momento</span>
           </h2>

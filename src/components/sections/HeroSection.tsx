@@ -34,7 +34,7 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className={styles.btnPrimary}
               >
-                QUERO ESCALAR MINHAS VENDAS
+                QUERO VENDER NA INTERNET
               </a>
               <a
                 href={WA_LINKS.default}

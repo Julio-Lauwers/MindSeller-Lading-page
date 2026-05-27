@@ -7,7 +7,6 @@ export default function HowItWorksSection() {
     <section id="how" className={styles.how}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          <SectionTag centered>Como Funciona</SectionTag>
           <h2 className={styles.sectionH2}>
             Simples, direto e com <span className="gold">resultados reais</span>
           </h2>

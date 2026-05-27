@@ -22,17 +22,6 @@ export default function NumbersSection() {
             </div>
           ))}
         </div>
-
-        <div className={styles.logosStrip}>
-          <h4>Plataformas &amp; especialidades</h4>
-          <div className={styles.logosRow}>
-            {LOGO_PILLS.map((pill) => (
-              <div key={pill} className={styles.logoPill}>
-                {pill}
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )

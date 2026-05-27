@@ -11,20 +11,7 @@ export default function Footer() {
               Mind<span>seller</span>
             </div>
             <p>Mentoria e assessoria especializada para vendas nos marketplaces. Transformando empreendedores em líderes de mercado.</p>
-            <div className={styles.social}>
-              {FOOTER_SOCIAL.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  className={styles.socialBtn}
-                  aria-label={item.label}
-                  target={item.href.startsWith('http') ? '_blank' : undefined}
-                  rel="noopener noreferrer"
-                >
-                  {item.icon}
-                </a>
-              ))}
-            </div>
+            
           </div>
 
           <div className={styles.col}>

@@ -7,7 +7,6 @@ export default function MethodologySection() {
     <section id="methodology" className={styles.methodology}>
       <div className="container">
         <div className={styles.sectionHeader}>
-          <SectionTag centered>Metodologia</SectionTag>
           <h2 className={styles.sectionH2}>
             O método que já gerou <span className="gold">+R$20M</span>
           </h2>

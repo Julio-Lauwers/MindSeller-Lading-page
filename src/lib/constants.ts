@@ -79,51 +79,6 @@ export const NUMBERS = [
   { prefix: '', target: 3, suffix: '', label: 'Marketplaces dominados' },
 ]
 
-export const TESTIMONIALS = [
-  {
-    stars: 5,
-    text: 'Em 3 meses com a Mindseller, tripling meu faturamento na Shopee. O método é diferente de tudo que já vi — prático, direto e com resultados reais. Recomendo demais!',
-    name: 'Ana Paula M.',
-    role: 'Vendedora Shopee · MG',
-    initials: 'A',
-  },
-  {
-    stars: 5,
-    text: 'Entrei zerado nos marketplaces e em 6 meses já estava faturando R$50k/mês. O suporte pelo WhatsApp é incrível — respondem rápido e resolvem de verdade.',
-    name: 'Carlos Eduardo S.',
-    role: 'Lojista · SP',
-    initials: 'C',
-  },
-  {
-    stars: 5,
-    text: 'A Assessoria Completa foi transformadora. O time da Mindseller assumiu a operação e escalou do jeito que eu nunca conseguiria sozinho. Vale cada centavo.',
-    name: 'Fernanda L.',
-    role: 'Empresária · RJ',
-    initials: 'F',
-  },
-  {
-    stars: 5,
-    text: 'Já tentei outros cursos e mentorias antes. A Mindseller é a única que entrega resultado de verdade. Zé Mauro conhece os marketplaces como ninguém.',
-    name: 'Ricardo T.',
-    role: 'Revendedor · RS',
-    initials: 'R',
-  },
-  {
-    stars: 5,
-    text: 'Com o método de importação aprendi a comprar certo e vender com margem. Em 4 meses recuperei o investimento e ainda estou crescendo todo mês.',
-    name: 'Marcos A.',
-    role: 'Importador · GO',
-    initials: 'M',
-  },
-  {
-    stars: 5,
-    text: 'O que mais me surpreendeu foi a atenção individual. Não é só uma mentoria em grupo — eles olham para o meu negócio especificamente e resolvem os meus gargalos.',
-    name: 'Juliana R.',
-    role: 'Empreendedora · BA',
-    initials: 'J',
-  },
-]
-
 export const METHODOLOGY_STEPS = [
   {
     num: 1,
@@ -256,7 +211,7 @@ export const FAQS = [
   {
     question: 'Quanto preciso investir além da mentoria?',
     answer:
-      'Depende do seu momento. Para iniciantes, recomendamos começar com um capital de estoque a partir de R$2.000 a R$5.000. Ensinamos exatamente como usar esse capital da forma mais inteligente possível desde o início.',
+      'Depende do seu momento. Para iniciantes, recomendamos começar com um capital de estoque a partir de R$500 a R$5.000. Ensinamos exatamente como usar esse capital da forma mais inteligente possível desde o início. Mas também pode iniciar sem nenhum investimento com a OPERAÇÃO SEM ESTOQUE',
   },
   {
     question: 'A mentoria funciona para quem vende produtos físicos?',
