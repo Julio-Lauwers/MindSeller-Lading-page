@@ -18,7 +18,7 @@ export default function MethodologySection() {
         <div className={styles.timeline}>
           <div className={styles.timelineLine} />
           {METHODOLOGY_STEPS.map((step) => (
-            <div key={step.num} className={`${styles.timelineItem} fade-up`}>
+            <div key={step.num} className={`${styles.timelineItem} ${step.side === 'left' ? styles.timelineItemLeft : ''} fade-up`}>
               {step.side === 'right' ? (
                 <>
                   <div className={styles.timelineEmpty} />

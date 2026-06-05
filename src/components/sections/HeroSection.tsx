@@ -16,7 +16,7 @@ export default function HeroSection() {
             <h1 className={`${styles.heroH1} fade-up`}>
               Ajudamos você a vender na{' '}
               <em>Shopee, TikTok Shop e Mercado Livre</em>{' '}
-              com estratégia validada
+              com uma estratégia validada
             </h1>
             <p className={`${styles.heroSub} fade-up`}>
               Mentoria e assessoria especializada para começar a vender ou escalar
@@ -34,7 +34,7 @@ export default function HeroSection() {
                 rel="noopener noreferrer"
                 className={styles.btnPrimary}
               >
-                QUERO VENDER NA INTERNET
+                QUERO FALAR COM UM ESPECIALISTA
               </a>
               <a
                 href={WA_LINKS.default}

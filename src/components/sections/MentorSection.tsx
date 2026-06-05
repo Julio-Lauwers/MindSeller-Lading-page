@@ -11,7 +11,7 @@ export default function MentorSection() {
           <div className={`${styles.mentorImgWrap} fade-left`}>
             <Image
               src="/Mentor-shopee.jpeg"
-              alt="Zé Mauro - Fundador da Mindseller"
+              alt="Zé Mauro - Fundador da MindSeller"
               width={550}
               height={690}
               className={styles.mentorImg}
@@ -29,7 +29,7 @@ export default function MentorSection() {
             <p className={styles.mentorStory}>
               Zé Mauro começou do zero, literalmente. Com apenas R$488 no bolso, ele entrou no
               mundo dos marketplaces sem saber quase nada. Errou muito, aprendeu mais ainda. Cada
-              erro se transformou em aprendizado, cada aprendizado em metodologia.
+              erro se transformou em aprendizado, e cada aprendizado em metodologia.
               <br />
               <br />
               Depois de anos testando e validando estratégias reais — sem atalhos e sem fórmulas

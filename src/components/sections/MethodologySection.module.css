@@ -106,8 +106,11 @@
     display: none;
   }
 
-  /* Always show content on the right side on mobile */
-  .timelineItem > .timelineContent:first-child {
-    display: none;
+  .timelineItemLeft .timelineDot {
+    order: 1;
+  }
+
+  .timelineItemLeft .timelineContent {
+    order: 2;
   }
 }

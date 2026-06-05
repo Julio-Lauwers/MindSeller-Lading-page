@@ -13,7 +13,7 @@ export default function WhoSection() {
               <span className="gold">líderes de mercado</span>
             </h2>
             <p>
-              A Mindseller nasceu para resolver um problema real: milhares de empreendedores sem
+              A MindSeller nasceu para resolver um problema real: milhares de empreendedores sem
               saber como estruturar, posicionar e escalar suas operações nos principais marketplaces
               do Brasil.
             </p>

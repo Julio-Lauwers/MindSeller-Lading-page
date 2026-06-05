@@ -11,7 +11,7 @@ export default function TestimonialsSection() {
             O que nossos <span className="gold">alunos dizem</span>
           </h2>
           <p className={styles.sectionP}>
-            Resultados reais de pessoas reais. Veja o que quem passou pela Mindseller tem a dizer.
+            Resultados reais de pessoas reais. Veja o que os alunos da MindSeller têm a dizer.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ export default function TestimonialsSection() {
         <div className={`${styles.videoWrap} fade-up`}>
           <iframe
             src="https://www.youtube.com/embed/vc06g9zra8c"
-            title="Depoimento Mindseller"
+            title="Depoimento MindSeller"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           />

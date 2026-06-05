@@ -18,7 +18,7 @@ export default function FinalCtaSection() {
         <h2 className={styles.ctaH2}>
           Seu negócio está pronto
           <br />
-          para <span className="gold">vender mais?</span>
+          para <span className="gold">escalar suas vendas?</span>
         </h2>
         <p className={styles.ctaP}>
           Fale agora com um especialista e descubra o plano certo para sua operação crescer de verdade.

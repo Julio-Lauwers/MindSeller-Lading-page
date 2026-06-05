@@ -189,7 +189,7 @@ export const PLANS = [
     period: 'à vista · ou 12x',
     featured: false,
     features: [
-      'Time da Mindseller faz toda operação',
+      'O time da MindSeller faz toda operação',
       'Pesquisa e escolha de produtos',
       'Escala de vendas com ADS gerenciado',
       'Relatórios mensais de performance',

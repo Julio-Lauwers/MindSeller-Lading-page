@@ -44,7 +44,7 @@ export default function Footer() {
         </div>
 
         <div className={styles.bottom}>
-          <span>© 2025 <span className="gold">Mindseller</span>. Todos os direitos reservados.</span>
+          <span>© 2025 <span className="gold">MindSeller</span>. Todos os direitos reservados.</span>
           <span>Resultados podem variar. Comprometimento é essencial.</span>
         </div>
       </div>
