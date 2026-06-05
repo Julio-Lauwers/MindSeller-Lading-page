@@ -1,5 +1,6 @@
 import styles from './PricingSection.module.css'
 import SectionTag from '@/components/ui/SectionTag'
+import CountdownTimer from '@/components/ui/CountdownTimer'
 import { PLANS, WA_LINKS } from '@/lib/constants'
 
 export default function PricingSection() {
@@ -16,7 +17,10 @@ export default function PricingSection() {
         </div>
 
         <div className={styles.pricingNote}>
-          🔥 10% OFF para quem fechar nas próximas 24 horas
+          🔥 10% OFF para quem fechar nas próximas{' '}
+          <span className={styles.countdown}>
+            <CountdownTimer />
+          </span>
         </div>
 
         <div className={styles.pricingGrid}>

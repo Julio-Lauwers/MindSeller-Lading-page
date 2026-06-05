@@ -38,6 +38,14 @@
   margin: 0 auto 48px;
 }
 
+.countdown {
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.5px;
+  background: rgba(200, 169, 107, 0.15);
+  border-radius: 6px;
+  padding: 2px 8px;
+}
+
 .pricingGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
