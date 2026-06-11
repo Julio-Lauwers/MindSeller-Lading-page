@@ -2,6 +2,7 @@ import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat'
 import HeroSection from '@/components/sections/HeroSection'
+import QuizSection from '@/components/sections/QuizSection'
 import WhoSection from '@/components/sections/WhoSection'
 import MentorSection from '@/components/sections/MentorSection'
 import NumbersSection from '@/components/sections/NumbersSection'
@@ -21,11 +22,12 @@ export default function Home() {
       <Navbar />
       <main>
         <HeroSection />
-        <WhoSection />
-        <MentorSection />
         <NumbersSection />
+        <MentorSection />
+        <WhoSection />
         <TestimonialsSection />
         <MethodologySection />
+        <QuizSection />
         <HowItWorksSection />
         <PricingSection />
         <FaqSection />

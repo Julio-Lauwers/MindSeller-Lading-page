@@ -79,6 +79,9 @@
   .navLinks {
     display: none;
   }
+    .navCta {
+    display: none;
+  }
   .mobileBtn {
     display: block;
   }
