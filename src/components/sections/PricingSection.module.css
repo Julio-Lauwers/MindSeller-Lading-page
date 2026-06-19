@@ -116,7 +116,7 @@
 }
 
 .amount {
-  font-size: 52px;
+  font-size: 40px;
   font-weight: 900;
   color: var(--white);
   letter-spacing: -2px;
@@ -124,6 +124,12 @@
 }
 
 .period {
+  font-size: 13px;
+  color: var(--white-40);
+  margin-top: 6px;
+}
+
+.promotion {
   font-size: 13px;
   color: var(--white-40);
   margin-top: 6px;

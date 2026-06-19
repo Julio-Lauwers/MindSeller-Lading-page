@@ -1,5 +1,4 @@
 import styles from './PricingSection.module.css'
-import SectionTag from '@/components/ui/SectionTag'
 import CountdownTimer from '@/components/ui/CountdownTimer'
 import { PLANS, WA_LINKS } from '@/lib/constants'
 
@@ -35,9 +34,10 @@ export default function PricingSection() {
               <div className={styles.planName}>{plan.name}</div>
               <div className={styles.planTitle}>{plan.title}</div>
               <div className={styles.planPrice}>
+                <div className={styles.period}>{plan.period}</div>
                 <span className={styles.currency}>R$</span>
                 <span className={styles.amount}>{plan.price}</span>
-                <div className={styles.period}>{plan.period}</div>
+                <div className={styles.promotion}>{plan.promotion}</div>
               </div>
               <ul className={styles.planFeatures}>
                 {plan.features.map((feature) => (

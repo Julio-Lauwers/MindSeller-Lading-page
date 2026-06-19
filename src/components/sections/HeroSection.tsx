@@ -36,15 +36,6 @@ export default function HeroSection() {
               >
                 QUERO FALAR COM UM ESPECIALISTA
               </a>
-              <a
-                href={WA_LINKS.default}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.btnGhost}
-              >
-                <WhatsAppIcon className={styles.waIcon} />
-                Falar no WhatsApp
-              </a>
             </div>
           </div>
 
