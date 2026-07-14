@@ -14,10 +14,11 @@ export const WA_LINKS = {
 }
 
 export const NAV_LINKS = [
-  { label: 'Sobre', href: '#who' },
-  { label: 'Mentor', href: '#mentor' },
-  { label: 'Planos', href: '#pricing' },
-  { label: 'FAQ', href: '#faq' },
+  { label: 'Sobre', href: '/#who' },
+  { label: 'Mentor', href: '/#mentor' },
+  { label: 'Planos', href: '/#pricing' },
+  { label: 'FAQ', href: '/#faq' },
+  { label: 'Blog', href: '/blog' },
 ]
 
 export const HERO_BULLETS = [

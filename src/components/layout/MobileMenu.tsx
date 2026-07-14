@@ -1,5 +1,6 @@
 'use client'
 
+import Link from 'next/link'
 import styles from './MobileMenu.module.css'
 import { NAV_LINKS, WA_LINKS } from '@/lib/constants'
 
@@ -22,9 +23,9 @@ export default function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
         </div>
         <nav className={styles.links}>
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} className={styles.link} onClick={onClose}>
+            <Link key={link.href} href={link.href} className={styles.link} onClick={onClose}>
               {link.label}
-            </a>
+            </Link>
           ))}
         </nav>
         <a

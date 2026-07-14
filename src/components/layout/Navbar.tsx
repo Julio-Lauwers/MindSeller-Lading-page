@@ -34,9 +34,9 @@ export default function Navbar() {
 
             <div className={styles.navLinks}>
               {NAV_LINKS.map((link) => (
-                <a key={link.href} href={link.href} className={styles.navLink}>
+                <Link key={link.href} href={link.href} className={styles.navLink}>
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
 

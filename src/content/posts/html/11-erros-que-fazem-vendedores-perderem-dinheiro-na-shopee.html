@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<!--
+  ════════════════════════════════════════════════════════════════
+  INSTRUÇÕES PARA O DESENVOLVEDOR — IMAGENS DOS PRINTS
+  ════════════════════════════════════════════════════════════════
+  Salvar as imagens abaixo na pasta "prints/" junto com este HTML.
+  Os nomes de arquivo devem ser exatamente como listado:
+
+  prints/max-resultado.jpg      → print do painel Shopee do Max (R$5,01mil, 171 pedidos)
+  prints/lucas-resultado.jpg    → print do painel Shopee do Lucas Silva (R$7,13mil)
+  prints/dodo-conversa.jpg      → print da conversa WhatsApp do Dodo (mensagens da manhã)
+  prints/luana-resultado.jpg    → print do painel Shopee da Luana (498 pedidos)
+  prints/vania-produto1.jpg     → print do painel Shopee da Vânia (R$20,94mil, 859 pedidos)
+  prints/vania-produto2.jpg     → print do painel Shopee da Vânia (R$19,16mil, 743 pedidos)
+  prints/vania-conversa.jpg     → print da conversa WhatsApp "E a Vânia passou dos R$40k"
+
+  As imagens devem ser usadas SEM QUALQUER EDIÇÃO — exatamente como recebidas.
+  ════════════════════════════════════════════════════════════════
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Os 11 Erros que Fazem Vendedores Perderem Dinheiro na Shopee — @zemauroseller</title>
+  <meta name="description" content="Guia gratuito do influencer oficial Shopee @zemauroseller: os 11 erros mais comuns e como corrigir cada um." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --laranja: #EE4D2D;
+      --laranja-dark: #C73D1F;
+      --laranja-light: #FFF3F0;
+      --verde: #27AE60;
+      --verde-light: #EAFAF1;
+      --amarelo: #F39C12;
+      --amarelo-light: #FEF9E7;
+      --azul: #2980B9;
+      --azul-light: #EBF5FB;
+      --cinza-bg: #F8F9FA;
+      --cinza-borda: #E5E7EB;
+      --texto: #1A1A2E;
+      --texto-suave: #6B7280;
+      --branco: #FFFFFF;
+      --ouro: #FFD700;
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--cinza-bg); color: var(--texto); line-height: 1.6; }
+
+    /* ── HERO ── */
+    .hero {
+      background: linear-gradient(160deg, #0D0D1A 0%, #1A1A2E 50%, #2C1810 100%);
+      color: var(--branco);
+      padding: 56px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 300px; height: 300px;
+      background: radial-gradient(circle, rgba(238,77,45,0.15) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,215,0,0.15);
+      border: 1px solid rgba(255,215,0,0.35);
+      color: var(--ouro);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(22px, 5vw, 42px);
+      font-weight: 800;
+      line-height: 1.15;
+      max-width: 780px;
+      margin: 0 auto 16px;
+    }
+    .hero h1 em { color: var(--laranja); font-style: normal; }
+    .hero-sub {
+      font-size: clamp(14px, 2.5vw, 18px);
+      color: rgba(255,255,255,0.75);
+      max-width: 560px;
+      margin: 0 auto 36px;
+    }
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: clamp(20px, 5vw, 48px);
+      flex-wrap: wrap;
+    }
+    .hero-stat strong { display: block; font-size: clamp(22px, 4vw, 32px); font-weight: 800; color: var(--ouro); }
+    .hero-stat span { font-size: 12px; color: rgba(255,255,255,0.65); }
+
+    /* ── MENTOR INTRO ── */
+    .mentor-intro {
+      background: var(--branco);
+      border-bottom: 2px solid var(--cinza-borda);
+    }
+    .mentor-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      display: flex;
+      gap: 28px;
+      align-items: flex-start;
+    }
+    .mentor-avatar {
+      flex-shrink: 0;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--laranja), var(--laranja-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      border: 3px solid var(--ouro);
+    }
+    .mentor-text h3 { font-size: 18px; font-weight: 800; margin-bottom: 4px; }
+    .mentor-text .handle { color: var(--laranja); font-size: 14px; font-weight: 600; margin-bottom: 12px; }
+    .mentor-text p { font-size: 14px; color: var(--texto-suave); line-height: 1.7; }
+    .mentor-text p strong { color: var(--texto); }
+    .mentor-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+    .mbadge {
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 12px;
+      border-radius: 20px;
+    }
+    .mbadge-laranja { background: var(--laranja-light); color: var(--laranja-dark); }
+    .mbadge-ouro { background: #FEF9E7; color: #856404; }
+    .mbadge-verde { background: var(--verde-light); color: #155724; }
+
+    /* ── NAV STICKY ── */
+    .nav-sticky {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--branco);
+      border-bottom: 2px solid var(--cinza-borda);
+      overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
+    }
+    .nav-sticky::-webkit-scrollbar { display: none; }
+    .nav-inner { display: flex; min-width: max-content; padding: 0 16px; }
+    .nav-btn {
+      display: flex; align-items: center; gap: 6px;
+      padding: 14px 18px; font-size: 13px; font-weight: 600;
+      color: var(--texto-suave); border: none; background: none;
+      cursor: pointer; border-bottom: 3px solid transparent;
+      white-space: nowrap; transition: all 0.2s; text-decoration: none;
+    }
+    .nav-btn:hover { color: var(--laranja); }
+    .nav-btn.active { color: var(--laranja); border-bottom-color: var(--laranja); }
+
+    /* ── CONTAINER ── */
+    .container { max-width: 800px; margin: 0 auto; padding: 0 16px; }
+
+    /* ── FASE HEADER ── */
+    .fase-header { padding: 48px 0 24px; scroll-margin-top: 60px; }
+    .fase-label {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 5px 14px;
+      border-radius: 20px; margin-bottom: 12px;
+    }
+    .fase-1 .fase-label { background: #FFF3CD; color: #856404; }
+    .fase-2 .fase-label { background: #D1ECF1; color: #0C5460; }
+    .fase-3 .fase-label { background: #D4EDDA; color: #155724; }
+    .fase-4 .fase-label { background: #CCE5FF; color: #004085; }
+    .fase-5 .fase-label { background: #F8D7DA; color: #721C24; }
+    .fase-header h2 { font-size: clamp(20px, 4vw, 28px); font-weight: 800; margin-bottom: 8px; }
+    .fase-header p { color: var(--texto-suave); font-size: 15px; }
+
+    /* ── ERRO CARD ── */
+    .erro-card {
+      background: var(--branco); border-radius: 16px;
+      border: 1px solid var(--cinza-borda); margin-bottom: 20px;
+      overflow: hidden; transition: box-shadow 0.2s;
+    }
+    .erro-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+    .erro-header { display: flex; align-items: flex-start; gap: 16px; padding: 24px 24px 0; }
+    .erro-num {
+      flex-shrink: 0; width: 48px; height: 48px; border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 800; color: var(--branco);
+    }
+    .fase-1 .erro-num { background: #F39C12; }
+    .fase-2 .erro-num { background: #17A2B8; }
+    .fase-3 .erro-num { background: #27AE60; }
+    .fase-4 .erro-num { background: #2980B9; }
+    .fase-5 .erro-num { background: #C0392B; }
+    .erro-title-block { flex: 1; }
+    .erro-title { font-size: clamp(15px, 2.5vw, 18px); font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
+    .erro-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+    .tag { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+    .tag-verde { background: #D4EDDA; color: #155724; }
+    .tag-amarelo { background: #FFF3CD; color: #856404; }
+    .tag-azul { background: #CCE5FF; color: #004085; }
+    .erro-body { padding: 20px 24px 24px; }
+
+    /* ── BLOCOS ── */
+    .bloco { border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+    .bloco:last-child { margin-bottom: 0; }
+    .bloco-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
+    .bloco-problema { background: #FFF3F0; border-left: 3px solid var(--laranja); }
+    .bloco-problema .bloco-label { color: var(--laranja); }
+    .bloco-solucao { background: var(--verde-light); border-left: 3px solid var(--verde); }
+    .bloco-solucao .bloco-label { color: var(--verde); }
+    .bloco-atencao { background: var(--amarelo-light); border-left: 3px solid var(--amarelo); }
+    .bloco-atencao .bloco-label { color: #856404; }
+    .bloco-dica { background: var(--azul-light); border-left: 3px solid var(--azul); }
+    .bloco-dica .bloco-label { color: var(--azul); }
+    .bloco p { font-size: 14px; line-height: 1.6; }
+    .bloco ul { padding-left: 18px; }
+    .bloco ul li { font-size: 14px; margin-bottom: 6px; line-height: 1.5; }
+    .bloco ul li:last-child { margin-bottom: 0; }
+
+    /* ── MENTOR MOMENT ── */
+    .mentor-moment {
+      background: linear-gradient(135deg, #1A1A2E, #2C1810);
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin: 24px 0;
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .mm-avatar {
+      flex-shrink: 0;
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--laranja), var(--laranja-dark));
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      border: 2px solid var(--ouro);
+    }
+    .mm-content { flex: 1; }
+    .mm-label { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ouro); margin-bottom: 6px; }
+    .mm-content p { font-size: 14px; color: rgba(255,255,255,0.88); line-height: 1.6; font-style: italic; }
+    .mm-content p strong { color: var(--branco); font-style: normal; }
+
+    /* ── TABELA ── */
+    .tabela-wrap { overflow-x: auto; margin-bottom: 14px; }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 340px; }
+    thead th { background: #1A1A2E; color: var(--branco); padding: 10px 14px; text-align: left; font-weight: 600; }
+    tbody tr:nth-child(even) { background: var(--cinza-bg); }
+    tbody td { padding: 10px 14px; border-bottom: 1px solid var(--cinza-borda); vertical-align: top; }
+
+    /* ── MÉTRICA GRID ── */
+    .metrica-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 14px; }
+    .metrica-item { background: var(--branco); border: 1px solid var(--cinza-borda); border-radius: 10px; padding: 14px; }
+    .metrica-nome { font-size: 12px; font-weight: 700; color: var(--texto-suave); margin-bottom: 4px; }
+    .metrica-meta { font-size: 16px; font-weight: 800; color: var(--azul); }
+
+    /* ── CAMPANHA GRID ── */
+    .campanha-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 14px; }
+    .campanha-item { background: var(--laranja-light); border: 1px solid #F5C6C0; border-radius: 10px; padding: 14px; text-align: center; }
+    .campanha-data { font-size: 22px; font-weight: 800; color: var(--laranja); }
+    .campanha-nome { font-size: 12px; font-weight: 600; color: var(--texto-suave); margin-top: 2px; }
+
+    /* ── CHECKLIST ── */
+    .checklist { list-style: none; padding: 0; }
+    .checklist li { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; padding: 8px 0; border-bottom: 1px solid rgba(0,0,0,0.05); }
+    .checklist li:last-child { border-bottom: none; }
+    .checklist li::before { content: '☐'; font-size: 16px; color: var(--azul); flex-shrink: 0; margin-top: 1px; }
+
+    /* ── PASSOS ── */
+    .passos { }
+    .passo { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
+    .passo-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--laranja); color: var(--branco); font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .passo p { font-size: 14px; padding-top: 4px; }
+
+    /* ── FÓRMULA ── */
+    .formula { background: #1A1A2E; color: var(--branco); border-radius: 10px; padding: 20px; font-family: 'Courier New', monospace; font-size: 13px; line-height: 1.8; margin-bottom: 14px; }
+    .formula .destaque { color: var(--ouro); font-weight: 700; }
+
+    /* ── DIVISOR DE SEÇÃO ── */
+    .section-divider { height: 2px; background: linear-gradient(90deg, var(--laranja), transparent); margin: 8px 0 0; border-radius: 2px; }
+
+    /* ── DEPOIMENTOS ── */
+    .depoimentos-section {
+      padding: 48px 0 0;
+    }
+    .depoimentos-header { text-align: center; margin-bottom: 32px; }
+    .depoimentos-header .section-badge {
+      display: inline-block;
+      background: var(--laranja-light);
+      color: var(--laranja-dark);
+      font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 5px 16px; border-radius: 20px; margin-bottom: 12px;
+    }
+    .depoimentos-header h2 { font-size: clamp(20px, 3.5vw, 28px); font-weight: 800; margin-bottom: 8px; }
+    .depoimentos-header p { color: var(--texto-suave); font-size: 15px; }
+    .depoimentos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .depo-card {
+      background: var(--branco);
+      border: 1px solid var(--cinza-borda);
+      border-radius: 14px;
+      padding: 20px;
+      position: relative;
+    }
+    .depo-card::before {
+      content: '"';
+      position: absolute; top: 12px; right: 16px;
+      font-size: 48px; color: var(--laranja-light);
+      font-family: Georgia, serif; line-height: 1;
+    }
+    .depo-top { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .depo-avatar {
+      width: 44px; height: 44px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 800; color: var(--branco);
+      flex-shrink: 0;
+    }
+    .depo-info { flex: 1; }
+    .depo-nome { font-size: 14px; font-weight: 700; }
+    .depo-origem { font-size: 12px; color: var(--texto-suave); }
+    .depo-resultado {
+      background: var(--verde-light);
+      border-radius: 8px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .depo-resultado-num { font-size: 18px; font-weight: 800; color: var(--verde); }
+    .depo-resultado-label { font-size: 12px; color: #155724; line-height: 1.3; }
+    .depo-texto { font-size: 13px; color: var(--texto-suave); line-height: 1.6; font-style: italic; }
+    .depo-placeholder {
+      border: 2px dashed var(--cinza-borda);
+      background: var(--cinza-bg);
+      display: flex; flex-direction: column; align-items: center;
+      justify-content: center; text-align: center;
+      padding: 28px 20px; min-height: 180px; border-radius: 14px;
+    }
+    .depo-placeholder p { font-size: 13px; color: var(--texto-suave); }
+    .depo-placeholder strong { color: var(--laranja); font-size: 14px; display: block; margin-bottom: 6px; }
+
+    /* ── MENTORIA PREVIEW ── */
+    .mentoria-section {
+      background: var(--branco);
+      border-radius: 16px;
+      border: 1px solid var(--cinza-borda);
+      padding: 36px 32px;
+      margin: 48px 0 0;
+    }
+    .mentoria-section .section-badge {
+      display: inline-block;
+      background: var(--laranja-light); color: var(--laranja-dark);
+      font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 5px 16px; border-radius: 20px; margin-bottom: 14px;
+    }
+    .mentoria-section h2 { font-size: clamp(18px, 3vw, 24px); font-weight: 800; margin-bottom: 6px; }
+    .mentoria-section > p { font-size: 15px; color: var(--texto-suave); margin-bottom: 24px; }
+    .mentoria-itens {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .mentoria-item {
+      background: var(--cinza-bg);
+      border-radius: 10px;
+      padding: 16px;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .mentoria-icon { font-size: 22px; flex-shrink: 0; }
+    .mentoria-item h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .mentoria-item p { font-size: 13px; color: var(--texto-suave); line-height: 1.5; }
+
+    /* ── QUICK REFERENCE ── */
+    .qr-section { background: var(--branco); border-radius: 16px; border: 1px solid var(--cinza-borda); padding: 32px; margin: 32px 0 0; }
+    .qr-section h3 { font-size: 20px; font-weight: 800; margin-bottom: 20px; }
+    .qr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+    .qr-item { background: var(--cinza-bg); border-radius: 10px; padding: 16px; }
+    .qr-fase { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 10px; color: var(--texto-suave); }
+    .qr-item ul { padding-left: 16px; }
+    .qr-item ul li { font-size: 13px; margin-bottom: 5px; color: var(--texto); }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: linear-gradient(160deg, #0D0D1A 0%, #1A1A2E 50%, #2C1810 100%);
+      color: var(--branco);
+      padding: 64px 24px;
+      text-align: center;
+      margin-top: 48px;
+    }
+    .cta-pre { font-size: 13px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--laranja); margin-bottom: 12px; }
+    .cta-section h2 { font-size: clamp(22px, 4.5vw, 38px); font-weight: 800; margin-bottom: 14px; line-height: 1.2; }
+    .cta-section h2 em { color: var(--ouro); font-style: normal; }
+    .cta-section .cta-sub { font-size: 16px; color: rgba(255,255,255,0.75); max-width: 540px; margin: 0 auto 40px; }
+    .cta-cards { display: flex; flex-direction: column; gap: 14px; max-width: 580px; margin: 0 auto 40px; }
+    .cta-card {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 14px; padding: 20px 24px;
+      text-align: left; cursor: pointer;
+      transition: all 0.2s;
+    }
+    .cta-card:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.3); transform: translateY(-1px); }
+    .cta-card-num { font-size: 10px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ouro); margin-bottom: 6px; }
+    .cta-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 5px; }
+    .cta-card p { font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 10px; line-height: 1.5; }
+    .cta-keyword { display: inline-block; background: var(--ouro); color: #1A1A2E; font-size: 13px; font-weight: 800; padding: 5px 14px; border-radius: 8px; }
+    .cta-card.destaque { background: rgba(238,77,45,0.2); border-color: rgba(238,77,45,0.5); }
+    .cta-assinatura { font-size: 15px; color: rgba(255,255,255,0.6); }
+    .cta-assinatura strong { color: var(--branco); }
+
+    /* ── FOOTER ── */
+    .footer { text-align: center; padding: 28px 16px; color: var(--texto-suave); font-size: 13px; background: var(--branco); border-top: 1px solid var(--cinza-borda); }
+
+    /* ── VANIA SECTION ── */
+    .vania-section {
+      background: linear-gradient(160deg, #0D0D1A 0%, #1A1A2E 40%, #0D2010 100%);
+      padding: 64px 24px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .vania-section::before {
+      content: '';
+      position: absolute;
+      top: -80px; left: 50%; transform: translateX(-50%);
+      width: 500px; height: 500px;
+      background: radial-gradient(circle, rgba(39,174,96,0.12) 0%, transparent 65%);
+      border-radius: 50%;
+      pointer-events: none;
+    }
+    .vania-pre {
+      font-size: 11px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; color: var(--verde); margin-bottom: 16px;
+    }
+    .vania-section h2 {
+      font-size: clamp(22px, 4.5vw, 38px); font-weight: 800;
+      color: var(--branco); line-height: 1.2; margin-bottom: 8px;
+    }
+    .vania-section h2 em { color: #FFD700; font-style: normal; }
+    .vania-pergunta {
+      font-size: clamp(15px, 2.5vw, 19px); color: rgba(255,255,255,0.7);
+      margin-bottom: 40px;
+    }
+    .vania-counter-wrap {
+      margin: 0 auto 40px;
+      display: inline-block;
+      position: relative;
+    }
+    .vania-counter-label {
+      font-size: 12px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 8px;
+    }
+    .vania-counter {
+      font-size: clamp(48px, 12vw, 86px);
+      font-weight: 900;
+      color: #FFD700;
+      line-height: 1;
+      letter-spacing: -2px;
+      text-shadow: 0 0 40px rgba(255,215,0,0.3);
+    }
+    .vania-counter-sub {
+      font-size: 14px; color: rgba(255,255,255,0.55); margin-top: 6px;
+    }
+    .vania-cards {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+    }
+    .vania-metric-card {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 14px;
+      padding: 18px 24px;
+      min-width: 160px;
+    }
+    .vania-metric-card .vmc-label { font-size: 11px; color: rgba(255,255,255,0.5); margin-bottom: 4px; }
+    .vania-metric-card .vmc-val { font-size: 24px; font-weight: 800; color: var(--verde); }
+    .vania-metric-card .vmc-sub { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 2px; }
+    .vania-bubbles {
+      max-width: 340px;
+      margin: 0 auto 36px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: flex-start;
+    }
+    .bubble {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 16px 16px 16px 4px;
+      padding: 10px 16px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.9);
+      max-width: 280px;
+      text-align: left;
+      opacity: 0;
+      transform: translateX(-12px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+    .bubble.visible { opacity: 1; transform: translateX(0); }
+    .vania-reveal {
+      background: rgba(39,174,96,0.12);
+      border: 1px solid rgba(39,174,96,0.3);
+      border-radius: 14px;
+      padding: 20px 24px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .vania-reveal p { font-size: 15px; color: rgba(255,255,255,0.85); line-height: 1.6; }
+    .vania-reveal strong { color: #FFD700; }
+    .vania-pulse {
+      display: inline-block;
+      width: 8px; height: 8px;
+      background: var(--verde);
+      border-radius: 50%;
+      margin-right: 6px;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.7); }
+    }
+
+    /* ── ROADMAP ── */
+    .roadmap-section {
+      background: var(--branco);
+      padding: 56px 24px;
+      border-bottom: 2px solid var(--cinza-borda);
+    }
+    .roadmap-header {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto 48px;
+    }
+    .roadmap-header .section-badge {
+      display: inline-block;
+      background: var(--laranja-light); color: var(--laranja-dark);
+      font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 5px 16px; border-radius: 20px; margin-bottom: 12px;
+    }
+    .roadmap-header h2 { font-size: clamp(22px, 4vw, 32px); font-weight: 800; margin-bottom: 10px; }
+    .roadmap-header h2 em { color: var(--laranja); font-style: normal; }
+    .roadmap-header p { font-size: 15px; color: var(--texto-suave); }
+    .roadmap-steps { max-width: 680px; margin: 0 auto; position: relative; }
+    .roadmap-step {
+      display: flex;
+      gap: 20px;
+      cursor: pointer;
+      margin-bottom: 0;
+    }
+    /* left column: circle + line */
+    .step-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 48px;
+    }
+    .step-circle {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: var(--cinza-bg);
+      border: 2px solid var(--cinza-borda);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 800; color: var(--texto-suave);
+      transition: all 0.3s;
+      flex-shrink: 0;
+      z-index: 1;
+    }
+    .roadmap-step.open .step-circle,
+    .roadmap-step:hover .step-circle {
+      background: var(--laranja);
+      border-color: var(--laranja);
+      color: var(--branco);
+      box-shadow: 0 0 0 6px rgba(238,77,45,0.12);
+    }
+    .step-line {
+      width: 2px;
+      flex: 1;
+      min-height: 32px;
+      background: var(--cinza-borda);
+      margin: 4px 0;
+      transition: background 0.3s;
+    }
+    .roadmap-step.open .step-line { background: var(--laranja); }
+    .roadmap-step:last-child .step-line { display: none; }
+    /* right column: content */
+    .step-content {
+      flex: 1;
+      padding-bottom: 28px;
+    }
+    .step-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 8px 0 12px;
+    }
+    .step-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+    .step-info { flex: 1; }
+    .step-info h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; transition: color 0.2s; }
+    .roadmap-step:hover .step-info h3,
+    .roadmap-step.open .step-info h3 { color: var(--laranja); }
+    .step-meta { display: flex; gap: 10px; flex-wrap: wrap; }
+    .step-meta span {
+      font-size: 11px; font-weight: 600;
+      background: var(--cinza-bg); color: var(--texto-suave);
+      padding: 3px 10px; border-radius: 20px;
+    }
+    .step-toggle {
+      width: 28px; height: 28px; border-radius: 50%;
+      background: var(--cinza-bg); border: 1px solid var(--cinza-borda);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px; font-weight: 300; color: var(--texto-suave);
+      flex-shrink: 0; transition: all 0.3s;
+      margin-top: 2px;
+    }
+    .roadmap-step.open .step-toggle {
+      background: var(--laranja); border-color: var(--laranja);
+      color: var(--branco); transform: rotate(45deg);
+    }
+    .step-teaser {
+      font-size: 14px; color: var(--texto-suave);
+      line-height: 1.6; margin-bottom: 0;
+      padding-right: 8px;
+    }
+    .step-detail {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.45s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s;
+      opacity: 0;
+    }
+    .roadmap-step.open .step-detail {
+      max-height: 600px;
+      opacity: 1;
+    }
+    .step-detail-inner {
+      background: var(--cinza-bg);
+      border-radius: 12px;
+      padding: 16px;
+      margin-top: 14px;
+    }
+    .step-detail-inner p { font-size: 14px; line-height: 1.7; color: var(--texto); margin-bottom: 10px; }
+    .step-detail-inner p:last-child { margin-bottom: 0; }
+    .step-detail-inner ul { padding-left: 18px; }
+    .step-detail-inner ul li { font-size: 14px; margin-bottom: 6px; line-height: 1.5; }
+    .step-highlight {
+      background: var(--laranja-light);
+      border-left: 3px solid var(--laranja);
+      border-radius: 0 8px 8px 0;
+      padding: 10px 14px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--laranja-dark);
+      margin-top: 10px;
+    }
+
+    /* ── WHATSAPP CTA ── */
+    .wpp-section {
+      background: linear-gradient(135deg, #075E54 0%, #128C7E 100%);
+      padding: 64px 24px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .wpp-section::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 280px; height: 280px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .wpp-section::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -40px;
+      width: 240px; height: 240px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+    }
+    .wpp-inner { max-width: 560px; margin: 0 auto; position: relative; z-index: 1; }
+    .wpp-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.3);
+      color: #fff;
+      font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
+      text-transform: uppercase; padding: 5px 16px;
+      border-radius: 20px; margin-bottom: 20px;
+    }
+    .wpp-section h2 {
+      font-size: clamp(22px, 4.5vw, 36px); font-weight: 800;
+      color: var(--branco); line-height: 1.2; margin-bottom: 12px;
+    }
+    .wpp-section h2 em { color: #25D366; font-style: normal; }
+    .wpp-section p { font-size: 15px; color: rgba(255,255,255,0.8); margin-bottom: 32px; }
+    .wpp-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #25D366;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 800;
+      padding: 16px 32px;
+      border-radius: 50px;
+      text-decoration: none;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+      transition: all 0.2s;
+      border: none; cursor: pointer;
+    }
+    .wpp-btn:hover { background: #1EBE58; transform: translateY(-2px); box-shadow: 0 12px 40px rgba(0,0,0,0.3); }
+    .wpp-btn svg { width: 24px; height: 24px; flex-shrink: 0; }
+    .wpp-disclaimer { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 14px; margin-bottom: 0; }
+
+    /* ── PRINTS (screenshots reais, sem edição) ── */
+    .depo-print {
+      margin-top: 14px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid var(--cinza-borda);
+    }
+    .depo-print img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+    .vania-prints {
+      display: flex;
+      justify-content: center;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+    .vania-print-item {
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+      max-width: 280px;
+      width: 100%;
+      flex: 1;
+    }
+    .vania-print-item img {
+      width: 100%;
+      display: block;
+    }
+    .vania-print-conversa {
+      max-width: 360px;
+      margin: 0 auto 28px;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+    .vania-print-conversa img { width: 100%; display: block; }
+
+    /* ── FRASE FECHAMENTO ── */
+    .fechamento-section {
+      background: linear-gradient(135deg, #1A1A2E, #0D2010);
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .fechamento-inner {
+      max-width: 620px;
+      margin: 0 auto;
+    }
+    .fechamento-inner h3 {
+      font-size: clamp(20px, 4vw, 30px);
+      font-weight: 800;
+      color: var(--branco);
+      line-height: 1.3;
+      margin-bottom: 10px;
+    }
+    .fechamento-inner h3 em { color: var(--ouro); font-style: normal; }
+    .fechamento-inner p { font-size: 15px; color: rgba(255,255,255,0.65); }
+
+    @media (max-width: 600px) {
+      .hero { padding: 48px 16px 36px; }
+      .mentor-inner { flex-direction: column; gap: 16px; }
+      .mentor-avatar { width: 72px; height: 72px; font-size: 28px; }
+      .erro-header { flex-direction: column; gap: 12px; }
+      .mentoria-section { padding: 28px 20px; }
+      .qr-section { padding: 24px 16px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HERO ══ -->
+<section class="hero">
+  <div class="hero-badge">✦ Influencer Oficial Shopee · @zemauroseller</div>
+  <h1>Os <em>11 Erros</em> que Fazem Vendedores Perderem Dinheiro na Shopee — e Como Corrigir Cada Um</h1>
+  <p class="hero-sub">O mesmo método que me tirou de garçom e motoboy para mais de R$11 milhões vendidos na Shopee. Agora você tem acesso a ele.</p>
+  <div class="hero-stats">
+    <div class="hero-stat"><strong>R$11M+</strong><span>vendidos na Shopee</span></div>
+    <div class="hero-stat"><strong>11</strong><span>erros detalhados</span></div>
+    <div class="hero-stat"><strong>5</strong><span>fases do método</span></div>
+    <div class="hero-stat"><strong>100%</strong><span>gratuito</span></div>
+  </div>
+</section>
+
+<!-- ══ MENTOR INTRO ══ -->
+<div class="mentor-intro">
+  <div class="mentor-inner">
+    <div class="mentor-avatar">👤</div>
+    <div class="mentor-text">
+      <h3>José Mauro</h3>
+      <div class="handle">@zemauroseller no Instagram</div>
+      <p>
+        Comecei do absoluto zero. Fui garçom, fui motoboy — e em algum momento da minha vida decidi que queria mais.
+        Descobri a Shopee, estudei a plataforma de dentro para fora, errei muito, ajustei a rota, e
+        <strong>construí um negócio que hoje já vendeu mais de R$11 milhões.</strong><br><br>
+        Hoje sou Influencer Oficial da Shopee e já ajudei centenas de pessoas a sair do zero e viver
+        exclusivamente de vendas na plataforma — sem precisar de nenhum conhecimento anterior.
+        <strong>Esse guia é o resumo de tudo que eu aprendi.</strong>
+      </p>
+      <div class="mentor-badges">
+        <span class="mbadge mbadge-ouro">⭐ Influencer Oficial Shopee</span>
+        <span class="mbadge mbadge-laranja">💰 R$11M+ vendidos</span>
+        <span class="mbadge mbadge-verde">✅ Começou do zero</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ TRILHA INTERATIVA ══ -->
+<section class="roadmap-section">
+  <div class="roadmap-header">
+    <div class="section-badge">🗺️ A Jornada Completa</div>
+    <h2>Do zero ao seu primeiro faturamento<br><em>em 6 passos</em></h2>
+    <p>Parece complicado de fora. Por dentro é um processo simples — um passo de cada vez. Clique em cada etapa para entender o que acontece.</p>
+  </div>
+  <div class="roadmap-steps" id="roadmapSteps">
+
+    <!-- Passo 1 -->
+    <div class="roadmap-step" onclick="toggleStep(this)">
+      <div class="step-left">
+        <div class="step-circle">1</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-header">
+          <div class="step-icon">🔍</div>
+          <div class="step-info">
+            <h3>Descobrir o produto certo</h3>
+            <div class="step-meta"><span>⏱ ~30 minutos</span><span>💸 Gratuito</span></div>
+          </div>
+          <div class="step-toggle">+</div>
+        </div>
+        <div class="step-teaser">Com a ferramenta certa você valida um produto em menos de 30 minutos — sem gastar um centavo. É só saber onde olhar.</div>
+        <div class="step-detail">
+          <div class="step-detail-inner">
+            <p>Abra um catálogo de produtos e busque cada item na Shopee com a extensão <strong>AvantPro Shopee</strong> ativada. Ela mostra o volume de vendas dos últimos 30 dias em cada listing — em tempo real. Com esse dado, você para de apostar e começa a decidir com números.</p>
+            <ul>
+              <li>Produto com <strong>300+ vendas/mês em pelo menos 2 concorrentes</strong>: demanda confirmada</li>
+              <li>Só 1 concorrente vendendo muito: pode ser pico pontual — não é suficiente</li>
+              <li>Nenhum concorrente vendendo: ou não há demanda, ou é oportunidade em nicho novo</li>
+            </ul>
+            <div class="step-highlight">✅ Esse passo leva 30 minutos e elimina 90% das apostas erradas antes de você colocar dinheiro em risco.<br><br>💡 <strong>Alunos da mentoria recebem:</strong> acesso à extensão AvantPro + catálogo de fornecedores já verificados e selecionados pelo @zemauroseller.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo 2 -->
+    <div class="roadmap-step" onclick="toggleStep(this)">
+      <div class="step-left">
+        <div class="step-circle">2</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-header">
+          <div class="step-icon">💰</div>
+          <div class="step-info">
+            <h3>Confirmar que o lucro está garantido</h3>
+            <div class="step-meta"><span>⏱ ~15 minutos</span><span>💸 Gratuito</span></div>
+          </div>
+          <div class="step-toggle">+</div>
+        </div>
+        <div class="step-teaser">Antes de comprar uma única unidade, você já sabe exatamente quanto vai ganhar por venda. Uma fórmula simples resolve isso.</div>
+        <div class="step-detail">
+          <div class="step-detail-inner">
+            <p>Aplique a fórmula completa: <strong>Preço de venda − custo do produto − frete − R$4,00 fixo − 20% de comissão − embalagem</strong>. O resultado é o seu lucro real por pedido.</p>
+            <ul>
+              <li><strong>Margem abaixo de 8%</strong>: consulte o fornecedor sobre preço em volume antes de descartar</li>
+              <li><strong>Margem entre 8% e 15%</strong>: viável, mas busque reduzir custo com escala</li>
+              <li><strong>Margem acima de 15%</strong>: produto aprovado — avance</li>
+            </ul>
+            <div class="step-highlight">✅ 15 minutos e você decide com números — não com intuição.<br><br>💡 <strong>Alunos da mentoria recebem:</strong> a planilha de precificação pronta, já com todas as taxas da Shopee configuradas. É só preencher o custo do produto e o preço de venda.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo 3 -->
+    <div class="roadmap-step" onclick="toggleStep(this)">
+      <div class="step-left">
+        <div class="step-circle">3</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-header">
+          <div class="step-icon">🖼️</div>
+          <div class="step-info">
+            <h3>Montar a vitrine que vende sozinha</h3>
+            <div class="step-meta"><span>⏱ 1 a 2 horas</span><span>💸 Custo baixo</span></div>
+          </div>
+          <div class="step-toggle">+</div>
+        </div>
+        <div class="step-teaser">O seu listing é o seu vendedor funcionando 24 horas por dia. Com 6 ajustes simples ele convence quem nunca te viu a comprar.</div>
+        <div class="step-detail">
+          <div class="step-detail-inner">
+            <p>Você não precisa ser fotógrafo nem designer. Precisa seguir um checklist:</p>
+            <ul>
+              <li>Foto principal: fundo branco, produto em destaque</li>
+              <li>Título: palavra-chave principal nos primeiros caracteres</li>
+              <li>Mínimo 4 fotos mostrando o produto em uso</li>
+              <li>Descrição que responde: o que é, para que serve, por que comprar aqui</li>
+              <li>Variações configuradas com foto em cada opção</li>
+            </ul>
+            <div class="step-highlight">✅ Feito uma vez, trabalha para você para sempre. Um bom listing vende mesmo quando você está dormindo.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo 4 -->
+    <div class="roadmap-step" onclick="toggleStep(this)">
+      <div class="step-left">
+        <div class="step-circle">4</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-header">
+          <div class="step-icon">⭐</div>
+          <div class="step-info">
+            <h3>Conquistar as primeiras avaliações</h3>
+            <div class="step-meta"><span>⏱ 1 a 2 semanas</span><span>💸 Investimento no produto</span></div>
+          </div>
+          <div class="step-toggle">+</div>
+        </div>
+        <div class="step-teaser">As primeiras 5 avaliações são o combustível que faz tudo acontecer. Chegam mais rápido do que você imagina — e mudam tudo.</div>
+        <div class="step-detail">
+          <div class="step-detail-inner">
+            <p>Com o listing publicado, as primeiras vendas chegam organicamente. Cada pedido entregue no prazo e com produto correto tem grande chance de virar avaliação positiva.</p>
+            <p>Enquanto isso, mantenha as métricas do algoritmo da Shopee no verde: resposta em até 1 hora, envio em D+1, avaliação da loja acima de 4.8. O algoritmo recompensa quem cuida do cliente — e começa a mostrar seu produto para mais pessoas automaticamente.</p>
+            <div class="step-highlight">✅ Com 5 avaliações positivas, o seu listing já tem credibilidade suficiente para receber tráfego pago com boa conversão.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo 5 -->
+    <div class="roadmap-step" onclick="toggleStep(this)">
+      <div class="step-left">
+        <div class="step-circle">5</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-header">
+          <div class="step-icon">📈</div>
+          <div class="step-info">
+            <h3>Ligar o anúncio no momento certo e escalar</h3>
+            <div class="step-meta"><span>⏱ Configuração em 30 min</span><span>💸 Orçamento diário de anúncio</span></div>
+          </div>
+          <div class="step-toggle">+</div>
+        </div>
+        <div class="step-teaser">Anúncio no momento certo multiplica suas vendas. No momento errado, queima dinheiro. A diferença é um critério simples.</div>
+        <div class="step-detail">
+          <div class="step-detail-inner">
+            <p>Ative o anúncio <strong>apenas</strong> quando tiver: listing otimizado (os 6 pontos), mínimo 5 avaliações reais, e pelo menos 1 venda orgânica confirmando que o produto converte.</p>
+            <p>Comece com orçamento conservador. Acompanhe o ROAS (quanto você vende para cada real investido). Só aumente o orçamento quando o retorno estiver positivo e consistente por pelo menos 3 dias seguidos.</p>
+            <div class="step-highlight">✅ Anúncio em listing preparado = escala. Anúncio em listing despreparado = gasto sem retorno. A ordem faz toda a diferença.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo 6 -->
+    <div class="roadmap-step" onclick="toggleStep(this)">
+      <div class="step-left">
+        <div class="step-circle">6</div>
+        <div class="step-line"></div>
+      </div>
+      <div class="step-content">
+        <div class="step-header">
+          <div class="step-icon">🛡️</div>
+          <div class="step-info">
+            <h3>Proteger, repetir e multiplicar</h3>
+            <div class="step-meta"><span>⏱ Rotina de 15 min a cada 15 dias</span><span>💸 Zero custo extra</span></div>
+          </div>
+          <div class="step-toggle">+</div>
+        </div>
+        <div class="step-teaser">Um produto validado é só o começo. O processo se repete — e cada novo produto fica mais rápido, mais fácil e mais lucrativo.</div>
+        <div class="step-detail">
+          <div class="step-detail-inner">
+            <p>A cada 15 dias, abra os listings dos seus principais concorrentes com a AvantPro. Verifique se o volume mudou, se alguém entrou no nicho, se algum concorrente saiu e abriu espaço.</p>
+            <p>Mantenha 2 fornecedores backup por produto. Cadastre seus listings nas campanhas da Shopee com antecedência (9.9, 10.10, 11.11, 12.12, dias de pagamento). Repita o processo com um segundo produto — agora mais rápido porque você já conhece cada etapa.</p>
+            <div class="step-highlight">✅ Quem segue essa rotina não é mais um vendedor — é um empreendedor com um sistema que funciona mesmo quando ele não está olhando.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /roadmap-steps -->
+</section>
+
+<!-- ══ NAV STICKY ══ -->
+<nav class="nav-sticky" id="nav">
+  <div class="nav-inner">
+    <a class="nav-btn active" href="#fase1">🔍 Produto Certo</a>
+    <a class="nav-btn" href="#fase2">💰 Números Certos</a>
+    <a class="nav-btn" href="#fase3">🖼️ A Vitrine</a>
+    <a class="nav-btn" href="#fase4">📈 Crescer</a>
+    <a class="nav-btn" href="#fase5">🛡️ Proteger</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- ══════════ FASE 1 ══════════ -->
+<div class="fase-1">
+  <div class="fase-header" id="fase1">
+    <div class="fase-label">🔍 Fase 1 — Erros 01 a 03</div>
+    <h2>Encontrar o Produto Certo</h2>
+    <p>A maioria perde antes mesmo de começar — escolhe produto errado, compara com concorrente errado, ou desiste de produto lucrativo cedo demais.</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- Erro 01 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">01</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Escolher produto pelo "feeling" em vez de dados</div>
+        <div class="erro-tags"><span class="tag tag-verde">Custo: Zero</span><span class="tag tag-amarelo">Dificuldade: Fácil</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Escolher produto pelo que "acha que vai vender" é apostar na sorte. Sem dados, você compra estoque, monta listing, aguarda — e descobre que ninguém está buscando aquilo.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ A Solução — 4 passos</div>
+        <div class="passos">
+          <div class="passo"><div class="passo-num">1</div><p>Acesse o catálogo de fornecedores e escolha produtos para testar</p></div>
+          <div class="passo"><div class="passo-num">2</div><p>Ative a extensão <strong>AvantPro Shopee</strong> no Chrome e busque o produto na plataforma</p></div>
+          <div class="passo"><div class="passo-num">3</div><p>A AvantPro mostra o volume de vendas dos últimos 30 dias em cada listing — em tempo real</p></div>
+          <div class="passo"><div class="passo-num">4</div><p>Critério mínimo: <strong>300+ vendas/mês</strong> em pelo menos <strong>2 concorrentes diferentes</strong></p></div>
+        </div>
+      </div>
+      <div class="bloco bloco-atencao">
+        <div class="bloco-label">⚡ Por que 2 concorrentes?</div>
+        <p>Se só 1 vende muito, pode ser pico pontual ou conta inflada. Quando 2 ou mais concorrentes independentes têm alto volume, a demanda é real e constante.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mentor Moment 1 -->
+  <div class="mentor-moment">
+    <div class="mm-avatar">👤</div>
+    <div class="mm-content">
+      <div class="mm-label">José Mauro — experiência real</div>
+      <p>"Nos meus primeiros meses, eu escolhia produto pelo que eu <strong>achava que ia bombar</strong>. Perdi dinheiro, perdi tempo. Quando aprendi a usar os dados da plataforma para validar antes de comprar, tudo mudou. Hoje eu nunca compro um produto sem checar o volume real dos concorrentes primeiro."</p>
+    </div>
+  </div>
+
+  <!-- Erro 02 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">02</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Comparar com o concorrente errado</div>
+        <div class="erro-tags"><span class="tag tag-verde">Custo: Zero</span><span class="tag tag-amarelo">Dificuldade: Fácil</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Comparar preço com quem aparece <em>primeiro</em> na busca — não com quem mais <em>vende</em>. O topo da busca nem sempre é o líder de vendas. Pode ser só quem pagou mais por anúncio.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ A Solução</div>
+        <p>Com a AvantPro ativa, você vê o volume real de vendas em cada listing. Os concorrentes de referência são os <strong>3 com maior volume de vendas</strong> — não os que aparecem no topo da busca.<br><br>Um produto pode estar no topo por anúncio pago e ter poucas vendas orgânicas. Volume de vendas real não mente.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Erro 03 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">03</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Desistir de produto lucrativo porque a margem não fecha na primeira compra</div>
+        <div class="erro-tags"><span class="tag tag-amarelo">Custo: Baixo</span><span class="tag tag-azul">Dificuldade: Médio</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Ver margem abaixo de 8% e descartar o produto imediatamente — sem entender <em>por que</em> os concorrentes conseguem praticar aquele preço.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ A Estratégia de Escala — 4 passos</div>
+        <div class="passos">
+          <div class="passo"><div class="passo-num">1</div><p>Pergunte ao fornecedor: <em>"Qual o preço se eu pedir X unidades por mês?"</em></p></div>
+          <div class="passo"><div class="passo-num">2</div><p>Simule na planilha de precificação com o preço de volume</p></div>
+          <div class="passo"><div class="passo-num">3</div><p>Valide com um lote pequeno (20–30 unidades) para provar que o produto vende</p></div>
+          <div class="passo"><div class="passo-num">4</div><p>Ao escalar o volume, o custo cai e a margem sobe naturalmente</p></div>
+        </div>
+      </div>
+      <div class="bloco bloco-dica">
+        <div class="bloco-label">💡 Por que os concorrentes conseguem esse preço?</div>
+        <p>Eles já compram em grande volume. O erro é comparar seu custo unitário com o preço final deles. A diferença está no volume de compra — e você pode chegar lá se planejar a escala desde o início.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ FASE 2 ══════════ -->
+<div class="fase-2">
+  <div class="fase-header" id="fase2">
+    <div class="fase-label">💰 Fase 2 — Erros 04 e 05</div>
+    <h2>Entrar com os Números Certos</h2>
+    <p>Produto certo com conta errada = prejuízo garantido. Aqui você aprende a calcular lucro real e a definir uma margem que vale o esforço.</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- Erro 04 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">04</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Calcular lucro sem incluir o que a Shopee realmente cobra</div>
+        <div class="erro-tags"><span class="tag tag-verde">Custo: Zero</span><span class="tag tag-amarelo">Dificuldade: Fácil</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Calcular só "preço de venda menos custo do produto" — e levar um susto quando o saldo da Shopee chega no final do mês com muito menos do que você esperava.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ A Fórmula Completa</div>
+        <div class="formula">
+LUCRO = Preço de Venda
+      <span class="destaque">− Custo do Produto</span>
+      <span class="destaque">− Frete (custo real de envio)</span>
+      <span class="destaque">− R$ 4,00 (taxa fixa Shopee por pedido)</span>
+      <span class="destaque">− 20% do valor (comissão Shopee*)</span>
+      <span class="destaque">− Embalagem</span>
+      <span class="destaque">− Margem de devolução (~2-3%)</span>
+        </div>
+      </div>
+      <div class="bloco bloco-atencao">
+        <div class="bloco-label">⚡ Atenção</div>
+        <p>A comissão de 20% + R$4 fixo se aplica a produtos até R$79,99. <strong>A comissão pode variar por categoria</strong> — sempre verifique no painel do vendedor antes de precificar.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mentor Moment 2 -->
+  <div class="mentor-moment">
+    <div class="mm-avatar">👤</div>
+    <div class="mm-content">
+      <div class="mm-label">José Mauro — experiência real</div>
+      <p>"Eu levei tempo para entender todas as taxas da Shopee. No começo, olhava para as vendas e achava que estava lucrando mais do que realmente estava. <strong>Quando montei a planilha de precificação correta, tudo ficou claro</strong> — e eu comecei a precificar para lucrar de verdade, não só para vender."</p>
+    </div>
+  </div>
+
+  <!-- Erro 05 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">05</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Aceitar margem baixa sem nenhuma estratégia de melhora</div>
+        <div class="erro-tags"><span class="tag tag-verde">Custo: Zero</span><span class="tag tag-amarelo">Dificuldade: Fácil</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Entrar com margem de 2–3% "para ver se vende" — sem nenhum plano para aumentá-la. Você pode vender muito e ainda assim perder dinheiro quando o volume de atendimento aumenta.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ As Regras de Margem</div>
+        <ul>
+          <li><strong>Margem mínima aceitável: 8%</strong> — abaixo disso, não entre no produto</li>
+          <li><strong>Margem alvo: 15% a 25%</strong> — é o que os vendedores estruturados praticam</li>
+          <li>Com volume e negociação de fornecedor, chegar nos 20%+ é totalmente real</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ FASE 3 ══════════ -->
+<div class="fase-3">
+  <div class="fase-header" id="fase3">
+    <div class="fase-label">🖼️ Fase 3 — Erros 06 e 07</div>
+    <h2>A Vitrine que Vende</h2>
+    <p>Produto certo, preço certo — mas listing fraco faz o cliente ir para o concorrente. E ignorar o algoritmo faz você sumir das buscas organicamente.</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- Erro 06 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">06</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Produto certo com vitrine errada</div>
+        <div class="erro-tags"><span class="tag tag-verde">Custo: Zero</span><span class="tag tag-azul">Dificuldade: Médio</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Produto com demanda validada mas listing fraco: foto genérica do fornecedor, título sem palavras-chave, sem avaliações. O cliente entra, não convence, sai — e compra do concorrente ao lado.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ Checklist de Listing — 6 Pontos Obrigatórios</div>
+        <ul class="checklist">
+          <li><strong>Foto principal:</strong> fundo branco, produto em destaque, sem texto excessivo</li>
+          <li><strong>Título:</strong> palavra-chave principal no início, até 120 caracteres</li>
+          <li><strong>Galeria:</strong> mínimo 4 fotos adicionais (produto em uso, ângulos, detalhes)</li>
+          <li><strong>Descrição:</strong> o que é / para que serve / por que comprar de você</li>
+          <li><strong>Avaliações:</strong> mínimo 5 antes de ativar qualquer anúncio</li>
+          <li><strong>Variações:</strong> configuradas corretamente com foto para cada opção</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mentor Moment 3 -->
+  <div class="mentor-moment">
+    <div class="mm-avatar">👤</div>
+    <div class="mm-content">
+      <div class="mm-label">José Mauro — experiência real</div>
+      <p>"Minha primeira foto era a foto do catálogo do fornecedor — a mesma que outros 50 vendedores usavam. Vendia pouco. Quando investi em uma foto própria com o produto em uso, minha taxa de conversão dobrou. <strong>A vitrine é o que vende antes do produto.</strong>"</p>
+    </div>
+  </div>
+
+  <!-- Erro 07 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">07</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Ignorar os sinais do algoritmo da Shopee</div>
+        <div class="erro-tags"><span class="tag tag-verde">Custo: Zero</span><span class="tag tag-azul">Dificuldade: Médio</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Achar que o algoritmo é aleatório ou que só depende de anúncio pago. Na prática, o algoritmo mede o desempenho da sua loja 24 horas por dia — e pune quem não mantém as métricas em ordem.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ As 6 Métricas que o Algoritmo Avalia</div>
+        <div class="metrica-grid">
+          <div class="metrica-item"><div class="metrica-nome">Taxa de Resposta</div><div class="metrica-meta">90%+ em &lt;1h</div></div>
+          <div class="metrica-item"><div class="metrica-nome">Prazo de Envio</div><div class="metrica-meta">Despacho em D+1</div></div>
+          <div class="metrica-item"><div class="metrica-nome">Avaliação da Loja</div><div class="metrica-meta">4.8 estrelas ou mais</div></div>
+          <div class="metrica-item"><div class="metrica-nome">Taxa de Devolução</div><div class="metrica-meta">Abaixo de 3%</div></div>
+          <div class="metrica-item"><div class="metrica-nome">Velocidade de Venda</div><div class="metrica-meta">Volume crescente</div></div>
+          <div class="metrica-item"><div class="metrica-nome">Taxa de Conclusão</div><div class="metrica-meta">97% ou mais</div></div>
+        </div>
+      </div>
+      <div class="bloco bloco-dica">
+        <div class="bloco-label">💡 O segredo</div>
+        <p>Quem mantém essas métricas no verde aparece organicamente para mais pessoas — sem pagar por isso. O anúncio potencializa quem já tem métricas boas; para quem tem métricas ruins, o anúncio só acelera o problema.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ FASE 4 ══════════ -->
+<div class="fase-4">
+  <div class="fase-header" id="fase4">
+    <div class="fase-label">📈 Fase 4 — Erros 08 e 09</div>
+    <h2>Crescer de Forma Inteligente</h2>
+    <p>Escalar sem preparação queima dinheiro. Depender de um único fornecedor é vulnerabilidade. Aqui você aprende a crescer com segurança.</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- Erro 08 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">08</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Ativar anúncio antes de estar pronto</div>
+        <div class="erro-tags"><span class="tag tag-amarelo">Custo: Médio</span><span class="tag tag-azul">Dificuldade: Médio</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Ligar o anúncio com listing fraco ou sem avaliações. O anúncio traz clique, o listing ruim perde a venda — você só gastou dinheiro à toa. E o histórico de conversão baixo prejudica o próprio desempenho do anúncio.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ A Regra de Ouro do Anúncio</div>
+        <ul class="checklist">
+          <li>Listing otimizado (todos os 6 pontos do Erro 06 ok)</li>
+          <li>Mínimo 5 avaliações reais</li>
+          <li>Pelo menos 1 venda orgânica comprovando que o produto converte</li>
+          <li><strong>Só então ative o anúncio</strong></li>
+        </ul>
+      </div>
+      <div class="bloco bloco-atencao">
+        <div class="bloco-label">⚡ Comparativo</div>
+        <div class="tabela-wrap">
+          <table>
+            <thead><tr><th>❌ Jeito Errado</th><th>✅ Jeito Certo</th></tr></thead>
+            <tbody>
+              <tr><td>Ativa anúncio sem avaliações</td><td>Consegue primeiras avaliações organicamente</td></tr>
+              <tr><td>Usa foto genérica do fornecedor</td><td>Cria foto própria com produto em uso</td></tr>
+              <tr><td>Título incompleto ou genérico</td><td>Título com palavra-chave principal no início</td></tr>
+              <tr><td>Aumenta orçamento antes de converter</td><td>Só aumenta orçamento após ROI positivo comprovado</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mentor Moment 4 -->
+  <div class="mentor-moment">
+    <div class="mm-avatar">👤</div>
+    <div class="mm-content">
+      <div class="mm-label">José Mauro — experiência real</div>
+      <p>"Eu já perdi dinheiro com anúncio antes de ter avaliações. O produto não convertia, o custo por clique subia, e eu achava que o produto era ruim. <strong>O produto era bom — o listing é que não estava pronto para receber tráfego pago.</strong> Erro caro e fácil de evitar quando você sabe o que precisa estar no lugar antes de ligar o anúncio."</p>
+    </div>
+  </div>
+
+  <!-- Erro 09 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">09</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Depender de um único fornecedor</div>
+        <div class="erro-tags"><span class="tag tag-verde">Custo: Zero</span><span class="tag tag-amarelo">Dificuldade: Fácil</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Fornecedor some, sobe preço de repente, atrasa entrega — e você para de vender. Seu negócio fica refém de uma única relação comercial.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ A Solução</div>
+        <p>Para cada produto que você decidir vender, mapeie <strong>2 fornecedores backup</strong> antes de começar. Isso garante:</p><br>
+        <ul>
+          <li>Continuidade nas vendas mesmo se um fornecedor falhar</li>
+          <li>Poder de negociação — você pode trocar se o preço subir</li>
+          <li>Proteção contra sazonalidade e rupturas de estoque</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ FASE 5 ══════════ -->
+<div class="fase-5">
+  <div class="fase-header" id="fase5">
+    <div class="fase-label">🛡️ Fase 5 — Erros 10 e 11</div>
+    <h2>Proteger e Multiplicar</h2>
+    <p>Vendedores que chegam ao próximo nível não são mais inteligentes — são mais sistemáticos. Eles usam o calendário da Shopee e monitoram o mercado de forma constante.</p>
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- Erro 10 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">10</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Ignorar o calendário de campanhas da Shopee</div>
+        <div class="erro-tags"><span class="tag tag-verde">Custo: Zero</span><span class="tag tag-amarelo">Dificuldade: Fácil</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Estar sem estoque na campanha principal — ou cheio de estoque na semana sem campanha. As campanhas da Shopee multiplicam o volume de vendas. Não aproveitá-las é deixar dinheiro na mesa.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ O Calendário que todo vendedor precisa saber</div>
+        <div class="campanha-grid">
+          <div class="campanha-item"><div class="campanha-data">9/9</div><div class="campanha-nome">Campanha 9.9</div></div>
+          <div class="campanha-item"><div class="campanha-data">10/10</div><div class="campanha-nome">Campanha 10.10</div></div>
+          <div class="campanha-item"><div class="campanha-data">11/11</div><div class="campanha-nome">🏆 Grande Campanha do Ano</div></div>
+          <div class="campanha-item"><div class="campanha-data">12/12</div><div class="campanha-nome">Campanha 12.12</div></div>
+          <div class="campanha-item"><div class="campanha-data">Dia 15</div><div class="campanha-nome">Pico mensal (pagamento)</div></div>
+          <div class="campanha-item"><div class="campanha-data">Último dia</div><div class="campanha-nome">Pico mensal (fechamento)</div></div>
+        </div>
+      </div>
+      <div class="bloco bloco-atencao">
+        <div class="bloco-label">⚡ Ação Prática</div>
+        <p>Cadastre seus listings nas campanhas com pelo menos <strong>2 semanas de antecedência</strong>. Para o 11/11, prepare estoque com 30+ dias de antecedência — é a maior data do ano na plataforma.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Erro 11 -->
+  <div class="erro-card">
+    <div class="erro-header">
+      <div class="erro-num">11</div>
+      <div class="erro-title-block">
+        <div class="erro-title">Não monitorar os concorrentes</div>
+        <div class="erro-tags"><span class="tag tag-verde">Custo: Zero</span><span class="tag tag-amarelo">Dificuldade: Fácil</span></div>
+      </div>
+    </div>
+    <div class="erro-body">
+      <div class="bloco bloco-problema">
+        <div class="bloco-label">⚠️ O Problema</div>
+        <p>Concorrente baixa preço, muda foto, entra um novo player no nicho — e você só percebe semanas depois, quando as vendas já caíram.</p>
+      </div>
+      <div class="bloco bloco-solucao">
+        <div class="bloco-label">✅ A Rotina de Monitoramento</div>
+        <p>A cada <strong>15 dias</strong>, abra os listings dos principais concorrentes com a AvantPro e verifique:</p><br>
+        <ul>
+          <li>Volume de vendas mudou para mais ou para menos?</li>
+          <li>O preço mudou? Promoção ativa?</li>
+          <li>Novo concorrente entrando no nicho?</li>
+          <li>Algum concorrente saiu e abriu espaço para você crescer?</li>
+        </ul>
+      </div>
+      <div class="bloco bloco-dica">
+        <div class="bloco-label">💡 15 minutos a cada 15 dias</div>
+        <p>Isso é tudo que você precisa para nunca ser pego de surpresa. Coloque um lembrete no celular agora mesmo.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ QUICK REFERENCE ══ -->
+<div class="qr-section">
+  <h3>⚡ Referência Rápida — O Método Completo</h3>
+  <div class="qr-grid">
+    <div class="qr-item">
+      <div class="qr-fase">🔍 Produto Certo</div>
+      <ul>
+        <li>AvantPro para validar demanda</li>
+        <li>300+ vendas/mês em 2+ concorrentes</li>
+        <li>Escala com fornecedor antes de desistir</li>
+      </ul>
+    </div>
+    <div class="qr-item">
+      <div class="qr-fase">💰 Números Certos</div>
+      <ul>
+        <li>R$4 fixo + 20% comissão Shopee</li>
+        <li>Piso: 8% de margem</li>
+        <li>Alvo: 15–25% de margem</li>
+      </ul>
+    </div>
+    <div class="qr-item">
+      <div class="qr-fase">🖼️ A Vitrine</div>
+      <ul>
+        <li>6 pontos do listing obrigatórios</li>
+        <li>5+ avaliações antes do anúncio</li>
+        <li>6 métricas do algoritmo no verde</li>
+      </ul>
+    </div>
+    <div class="qr-item">
+      <div class="qr-fase">📈 Crescer</div>
+      <ul>
+        <li>Anúncio só com listing pronto</li>
+        <li>2 fornecedores backup por produto</li>
+        <li>Validar com lote pequeno primeiro</li>
+      </ul>
+    </div>
+    <div class="qr-item">
+      <div class="qr-fase">🛡️ Proteger</div>
+      <ul>
+        <li>Calendário de campanhas no radar</li>
+        <li>Monitorar concorrentes a cada 15 dias</li>
+        <li>Estoque planejado para datas quentes</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- ══ DEPOIMENTOS ══ -->
+<div class="depoimentos-section">
+  <div class="depoimentos-header">
+    <div class="section-badge">✦ Resultados Reais</div>
+    <h2>Quem aplicou o método, colheu resultado</h2>
+    <p>Pessoas que começaram do zero — assim como eu comecei — e hoje vivem de vendas na Shopee.</p>
+  </div>
+  <div class="depoimentos-grid">
+
+    <!-- Max Acessórios -->
+    <div class="depo-card">
+      <div class="depo-top">
+        <div class="depo-avatar" style="background:linear-gradient(135deg,#EE4D2D,#C73D1F);">M</div>
+        <div class="depo-info">
+          <div class="depo-nome">Max Acessórios</div>
+          <div class="depo-origem">Aluno da Mentoria</div>
+        </div>
+      </div>
+      <div class="depo-resultado">
+        <div class="depo-resultado-num">R$5.010</div>
+        <div class="depo-resultado-label">em 1 único dia<br>171 pedidos · +143%</div>
+      </div>
+      <div class="depo-texto">"Boaa cara 😎 produto validado" — resultado do dia após aplicar o método de validação com AvantPro.</div>
+      <div class="depo-print">
+        <img src="prints/max-resultado.jpg" alt="Print do painel Shopee - Max Acessórios R$5.010 em um dia" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Lucas Silva -->
+    <div class="depo-card">
+      <div class="depo-top">
+        <div class="depo-avatar" style="background:linear-gradient(135deg,#2980B9,#1A5276);">L</div>
+        <div class="depo-info">
+          <div class="depo-nome">Lucas Silva</div>
+          <div class="depo-origem">Aluno da Mentoria</div>
+        </div>
+      </div>
+      <div class="depo-resultado">
+        <div class="depo-resultado-num">R$7.130</div>
+        <div class="depo-resultado-label">em 1 noite<br>453 pedidos · 7,39% conversão</div>
+      </div>
+      <div class="depo-texto">"Nunca imaginei que ia chegar nos 5k... imagina em 7? Que loucura. Obrigado Zé pelos ensinamentos. Glórias a Deus!"</div>
+      <div class="depo-print">
+        <img src="prints/lucas-resultado.jpg" alt="Print do painel Shopee - Lucas Silva R$7.130 em uma noite" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Dodo -->
+    <div class="depo-card">
+      <div class="depo-top">
+        <div class="depo-avatar" style="background:linear-gradient(135deg,#27AE60,#1E8449);">D</div>
+        <div class="depo-info">
+          <div class="depo-nome">Dodo</div>
+          <div class="depo-origem">Aluno da Mentoria</div>
+        </div>
+      </div>
+      <div class="depo-resultado">
+        <div class="depo-resultado-num">R$13.000+</div>
+        <div class="depo-resultado-label">em 1 dia<br>Recorde pessoal de vendas</div>
+      </div>
+      <div class="depo-texto">"Bom dia, nunca vendi tanto! Quando fui dormir estava em 13k. Não liguei o PC ainda pra ver o total." — mensagem enviada às 7h da manhã.</div>
+      <div class="depo-print">
+        <img src="prints/dodo-conversa.jpg" alt="Print da conversa WhatsApp - Dodo nunca vendi tanto, 13k+" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- Luana Candido -->
+    <div class="depo-card">
+      <div class="depo-top">
+        <div class="depo-avatar" style="background:linear-gradient(135deg,#8E44AD,#6C3483);">LC</div>
+        <div class="depo-info">
+          <div class="depo-nome">Luana Candido</div>
+          <div class="depo-origem">Aluna da Mentoria</div>
+        </div>
+      </div>
+      <div class="depo-resultado">
+        <div class="depo-resultado-num">498 pedidos</div>
+        <div class="depo-resultado-label">em 1 fim de semana<br>0 devoluções · 0 cancelamentos</div>
+      </div>
+      <div class="depo-texto">"Fim de semana foi top demais!" — 498 pedidos a enviar, zero problemas, operação rodando redonda.</div>
+      <div class="depo-print">
+        <img src="prints/luana-resultado.jpg" alt="Print do painel Shopee - Luana Candido 498 pedidos no fim de semana" loading="lazy" />
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ══ MENTORIA PREVIEW ══ -->
+<div class="mentoria-section">
+  <div class="section-badge">🚀 A Mentoria</div>
+  <h2>O que você recebe trabalhando comigo</h2>
+  <p>Não é um curso onde você assiste vídeos e fica por conta própria. É acompanhamento direto: você traz sua situação real e eu trabalho com você para resolver cada etapa — produto, precificação, listing e anúncio.</p>
+
+  <!-- Bônus exclusivos -->
+  <div style="background:linear-gradient(135deg,#1A1A2E,#2C1810);border-radius:16px;padding:24px;margin-bottom:24px;">
+    <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#FFD700;margin-bottom:14px;">🎁 Bônus exclusivos — você recebe assim que entrar</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+      <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:16px;">
+        <div style="font-size:22px;margin-bottom:8px;">📦</div>
+        <div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;">Catálogo de Fornecedores</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.5;">Acesso aos fornecedores que eu mesmo uso — já verificados, com bons preços e entrega confiável.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:16px;">
+        <div style="font-size:22px;margin-bottom:8px;">🔍</div>
+        <div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;">Acesso à AvantPro Shopee</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.5;">A extensão que revela o volume de vendas dos concorrentes. Você valida produto com dados reais, não com achismo.</div>
+      </div>
+      <div style="background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.15);border-radius:12px;padding:16px;">
+        <div style="font-size:22px;margin-bottom:8px;">📊</div>
+        <div style="font-size:14px;font-weight:700;color:#fff;margin-bottom:4px;">Planilha de Precificação</div>
+        <div style="font-size:13px;color:rgba(255,255,255,0.65);line-height:1.5;">A mesma planilha que uso para calcular margem, taxas e lucro real. É só preencher o custo e o preço — ela faz o resto.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mentoria-itens">
+    <div class="mentoria-item">
+      <div class="mentoria-icon">🎯</div>
+      <div>
+        <h4>Análise do seu produto e nicho</h4>
+        <p>Validamos juntos qual produto tem potencial real para o seu caso — com dados, não com intuição.</p>
+      </div>
+    </div>
+    <div class="mentoria-item">
+      <div class="mentoria-icon">🖼️</div>
+      <div>
+        <h4>Revisão completa do seu listing</h4>
+        <p>Analisamos sua vitrine, título e fotos — você sai sabendo exatamente o que ajustar para converter mais.</p>
+      </div>
+    </div>
+    <div class="mentoria-item">
+      <div class="mentoria-icon">📈</div>
+      <div>
+        <h4>Estratégia de anúncio sem desperdício</h4>
+        <p>Você aprende quando ligar o anúncio, quanto investir e como escalar apenas quando o ROI está positivo.</p>
+      </div>
+    </div>
+    <div class="mentoria-item">
+      <div class="mentoria-icon">🤝</div>
+      <div>
+        <h4>Acesso direto a mim</h4>
+        <p>Você não fica sozinho. Tem acesso para tirar dúvidas e ser acompanhado em cada decisão importante.</p>
+      </div>
+    </div>
+    <div class="mentoria-item">
+      <div class="mentoria-icon">⚡</div>
+      <div>
+        <h4>Atalho de R$11 milhões em experiência</h4>
+        <p>Você não precisa errar o que eu já errei. Cada estratégia foi testada e refinada ao longo de anos na plataforma.</p>
+      </div>
+    </div>
+    <div class="mentoria-item">
+      <div class="mentoria-icon">🔄</div>
+      <div>
+        <h4>Método replicável</h4>
+        <p>Um produto validado vira dois, dois viram quatro. O processo que você aprende se repete em qualquer nicho.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<!-- ══ VÂNIA SECTION ══ -->
+<section class="vania-section" id="vania-section">
+  <div class="vania-pre">✦ O resultado que mais me orgulha</div>
+  <h2>Agora fala verdade pra mim...<br><em>você já imaginou vender assim?</em></h2>
+  <p class="vania-pergunta">Isso aconteceu em 1 único dia. Com uma aluna que começou do zero.</p>
+
+  <div class="vania-counter-wrap">
+    <div class="vania-counter-label">Total vendido em um único dia</div>
+    <div class="vania-counter" id="vaniaCounter">R$ 0</div>
+    <div class="vania-counter-sub">pelos dois produtos combinados · dia 7 de julho</div>
+  </div>
+
+  <!-- Prints reais do painel Shopee da Vânia — sem edição -->
+  <div class="vania-prints">
+    <div class="vania-print-item">
+      <img src="prints/vania-produto1.jpg" alt="Print painel Shopee Vânia - R$20,94mil em um dia" loading="lazy" />
+    </div>
+    <div class="vania-print-item">
+      <img src="prints/vania-produto2.jpg" alt="Print painel Shopee Vânia - R$19,16mil em um dia" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- Print da conversa WhatsApp — sem edição -->
+  <div class="vania-print-conversa">
+    <img src="prints/vania-conversa.jpg" alt="Print conversa WhatsApp - E a Vânia passou dos R$40k" loading="lazy" />
+  </div>
+
+  <div class="vania-bubbles" id="vaniaBubbles">
+    <div class="bubble" data-delay="0">E a Vânia... passou dos R$40.000,00 reais em 1 dia 🤯</div>
+    <div class="bubble" data-delay="300">Dois produtos. Método aplicado do início ao fim.</div>
+    <div class="bubble" data-delay="600">Começou do zero. Hoje vive disso. ✅</div>
+  </div>
+
+  <div class="vania-reveal">
+    <p><span class="vania-pulse"></span> <strong>A Vânia não tinha experiência em vendas online.</strong> Aplicou o método — produto certo, precificação certa, listing otimizado — e chegou a R$40.000 em um único dia. Isso não é sorte. É estratégia que já foi testada e comprovada por quem vendeu mais de R$11 milhões na plataforma.</p>
+  </div>
+</section>
+
+<!-- ══ FRASE FECHAMENTO ══ -->
+<section class="fechamento-section">
+  <div class="fechamento-inner">
+    <h3>Com esse passo a passo<br><em>sozinho você consegue</em> —<br>mas juntos chegamos muito mais rápido.</h3>
+    <p>O método está aqui, detalhado e pronto para aplicar. A diferença entre quem leva meses tentando sozinho e quem tem resultado em semanas é ter alguém que já percorreu esse caminho do lado.</p>
+  </div>
+</section>
+
+<!-- ══ WHATSAPP CTA ══ -->
+<section class="wpp-section">
+  <div class="wpp-inner">
+    <div class="wpp-badge">📱 Oferta exclusiva para quem leu até aqui</div>
+    <h2>Entre em contato agora<br>e ganhe uma <em>reunião gratuita</em><br>com @zemauroseller</h2>
+    <p>30 minutos direto com quem já vendeu mais de R$11 milhões na Shopee. Sem compromisso — entendo sua situação e mostro exatamente o que você precisa fazer agora.</p>
+    <a href="https://wa.me/55[SEU_NUMERO_WHATSAPP]?text=Oi%20José%20Mauro!%20Li%20o%20guia%20e%20quero%20a%20reunião%20gratuita%20%F0%9F%99%8C" class="wpp-btn" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+      </svg>
+      Chamar no WhatsApp agora
+    </a>
+    <p class="wpp-disclaimer">⚠️ Substituir [SEU_NUMERO_WHATSAPP] pelo número real antes de publicar · ex: 5511999999999</p>
+  </div>
+</section>
+
+<!-- ══ CTA FINAL ══ -->
+<section class="cta-section">
+  <div class="cta-pre">Próximo passo</div>
+  <h2>Como você quer<br><em>começar hoje?</em></h2>
+  <p class="cta-sub">Escolha o caminho que faz mais sentido para você agora. Não há resposta errada — há só o próximo passo.</p>
+  <!-- Bônus highlight antes dos cards -->
+  <div style="background:rgba(255,215,0,0.08);border:1px solid rgba(255,215,0,0.25);border-radius:14px;padding:18px 22px;max-width:580px;margin:0 auto 28px;text-align:left;">
+    <div style="font-size:12px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;color:#FFD700;margin-bottom:10px;">🎁 Quem entra na mentoria recebe agora</div>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,0.85);"><span>📦</span><span><strong style="color:#fff;">Catálogo de Fornecedores</strong> — os que eu uso, já verificados</span></div>
+      <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,0.85);"><span>🔍</span><span><strong style="color:#fff;">Acesso à AvantPro</strong> — veja o volume de vendas de qualquer concorrente</span></div>
+      <div style="display:flex;gap:10px;align-items:flex-start;font-size:14px;color:rgba(255,255,255,0.85);"><span>📊</span><span><strong style="color:#fff;">Planilha de Precificação</strong> — pronta, com todas as taxas da Shopee configuradas</span></div>
+    </div>
+  </div>
+
+  <div class="cta-cards">
+    <div class="cta-card destaque">
+      <div class="cta-card-num">🔥 Caminho 01 — Quero resultado mais rápido</div>
+      <h4>Mentoria com acompanhamento direto</h4>
+      <p>Você manda a mensagem, eu respondo com as próximas perguntas para entender sua situação e te direcionar. Sem enrolação, sem promessa vaga — trabalhamos no seu caso real.</p>
+      <div><span class="cta-keyword">Manda MENTORIA no meu Instagram</span></div>
+    </div>
+    <div class="cta-card">
+      <div class="cta-card-num">Caminho 02 — Quero conversar antes</div>
+      <h4>Conversa gratuita de 30 minutos</h4>
+      <p>Você manda a mensagem, agendamos uma conversa rápida. Sem compromisso: entendo onde você está, explico como funciona o acompanhamento e você decide se faz sentido.</p>
+      <div><span class="cta-keyword">Manda REUNIÃO no meu Instagram</span></div>
+    </div>
+    <div class="cta-card">
+      <div class="cta-card-num">Caminho 03 — Vou seguir o conteúdo gratuito</div>
+      <h4>Continuar aprendendo no Instagram</h4>
+      <p>Publico dicas toda semana sobre produto, precificação, anúncio e estratégia na Shopee. Você segue, aplica e me chama quando estiver pronto.</p>
+      <div><span class="cta-keyword">@zemauroseller no Instagram</span></div>
+    </div>
+  </div>
+  <p class="cta-assinatura">Com você nessa jornada — <strong>José Mauro · @zemauroseller</strong></p>
+</section>
+
+<div class="footer">
+  <p>Guia gratuito criado por <strong>José Mauro</strong> · Influencer Oficial Shopee · <a href="https://instagram.com/zemauroseller" style="color:var(--laranja);text-decoration:none;">@zemauroseller</a></p>
+  <p style="margin-top:6px;color:#9CA3AF;">Conteúdo educacional. Resultados variam conforme nicho, dedicação e execução.</p>
+</div>
+
+<script>
+  const sections = [
+    { id: 'fase1', btn: 0 }, { id: 'fase2', btn: 1 },
+    { id: 'fase3', btn: 2 }, { id: 'fase4', btn: 3 }, { id: 'fase5', btn: 4 },
+  ];
+  const btns = document.querySelectorAll('.nav-btn');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const match = sections.find(s => s.id === entry.target.id);
+        if (match) {
+          btns.forEach(b => b.classList.remove('active'));
+          btns[match.btn].classList.add('active');
+          btns[match.btn].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+        }
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+  sections.forEach(s => { const el = document.getElementById(s.id); if (el) observer.observe(el); });
+  btns.forEach(btn => {
+    btn.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(btn.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // ── Vânia Counter Animation ──
+  function animateCounter(el, target, duration) {
+    const start = performance.now();
+    const fmt = v => 'R$ ' + Math.floor(v).toLocaleString('pt-BR');
+    function step(now) {
+      const elapsed = now - start;
+      const progress = Math.min(elapsed / duration, 1);
+      // ease-out cubic
+      const eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = fmt(eased * target);
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = fmt(target);
+    }
+    requestAnimationFrame(step);
+  }
+
+  // ── Vânia Bubbles Animation ──
+  function showBubbles() {
+    const bubbles = document.querySelectorAll('#vaniaBubbles .bubble');
+    bubbles.forEach(b => {
+      const delay = parseInt(b.getAttribute('data-delay') || 0);
+      setTimeout(() => b.classList.add('visible'), delay);
+    });
+  }
+
+  // ── Roadmap Accordion ──
+  function toggleStep(el) {
+    const isOpen = el.classList.contains('open');
+    // close all
+    document.querySelectorAll('.roadmap-step.open').forEach(s => s.classList.remove('open'));
+    // open clicked if it was closed
+    if (!isOpen) el.classList.add('open');
+  }
+
+  // Animate roadmap steps in on scroll
+  (function() {
+    const steps = document.querySelectorAll('.roadmap-step');
+    steps.forEach((s, i) => {
+      s.style.opacity = '0';
+      s.style.transform = 'translateY(20px)';
+      s.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+    });
+    const stepsObs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const idx = Array.from(steps).indexOf(entry.target);
+          setTimeout(() => {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, idx * 80);
+          stepsObs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    steps.forEach(s => stepsObs.observe(s));
+  })();
+
+  // ── Trigger when Vânia section enters viewport
+  let vaniaTriggered = false;
+  const vaniaObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !vaniaTriggered) {
+        vaniaTriggered = true;
+        const counterEl = document.getElementById('vaniaCounter');
+        animateCounter(counterEl, 40100, 2200);
+        setTimeout(showBubbles, 1800);
+      }
+    });
+  }, { threshold: 0.3 });
+
+  const vaniaSection = document.getElementById('vania-section');
+  if (vaniaSection) vaniaObserver.observe(vaniaSection);
+</script>
+</body>
+</html>
