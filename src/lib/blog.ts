@@ -19,4 +19,5 @@ export interface BlogPost {
   // ...campos existentes
   cover: string;
   coverAlt: string;
-}
+} 
+  

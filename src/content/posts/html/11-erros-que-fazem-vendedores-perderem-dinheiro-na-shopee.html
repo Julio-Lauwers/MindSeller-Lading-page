@@ -3,16 +3,17 @@
   ════════════════════════════════════════════════════════════════
   INSTRUÇÕES PARA O DESENVOLVEDOR — IMAGENS DOS PRINTS
   ════════════════════════════════════════════════════════════════
-  Salvar as imagens abaixo na pasta "prints/" junto com este HTML.
+  Salvar as imagens abaixo na pasta "public/prints/" na raiz do projeto
+  (não em src/ — arquivos em src/ não são servidos pelo Next.js).
   Os nomes de arquivo devem ser exatamente como listado:
 
-  prints/max-resultado.jpg      → print do painel Shopee do Max (R$5,01mil, 171 pedidos)
-  prints/lucas-resultado.jpg    → print do painel Shopee do Lucas Silva (R$7,13mil)
-  prints/dodo-conversa.jpg      → print da conversa WhatsApp do Dodo (mensagens da manhã)
-  prints/luana-resultado.jpg    → print do painel Shopee da Luana (498 pedidos)
-  prints/vania-produto1.jpg     → print do painel Shopee da Vânia (R$20,94mil, 859 pedidos)
-  prints/vania-produto2.jpg     → print do painel Shopee da Vânia (R$19,16mil, 743 pedidos)
-  prints/vania-conversa.jpg     → print da conversa WhatsApp "E a Vânia passou dos R$40k"
+  public/prints/max-resultado.jpeg      → print do painel Shopee do Max (R$5,01mil, 171 pedidos)
+  public/prints/lucas-resultado.jpeg    → print do painel Shopee do Lucas Silva (R$7,13mil)
+  public/prints/dodo-conversa.jpeg      → print da conversa WhatsApp do Dodo (mensagens da manhã)
+  public/prints/luana-resultado.jpeg    → print do painel Shopee da Luana (498 pedidos)
+  public/prints/vania-produto1.jpeg     → print do painel Shopee da Vânia (R$20,94mil, 859 pedidos)
+  public/prints/vania-produto2.jpeg     → print do painel Shopee da Vânia (R$19,16mil, 743 pedidos) [FALTANDO]
+  public/prints/vania-conversa.jpeg     → print da conversa WhatsApp "E a Vânia passou dos R$40k" [FALTANDO]
 
   As imagens devem ser usadas SEM QUALQUER EDIÇÃO — exatamente como recebidas.
   ════════════════════════════════════════════════════════════════
@@ -123,6 +124,13 @@
       justify-content: center;
       font-size: 36px;
       border: 3px solid var(--ouro);
+      overflow: hidden;
+    }
+    .mentor-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
     }
     .mentor-text h3 { font-size: 18px; font-weight: 800; margin-bottom: 4px; }
     .mentor-text .handle { color: var(--laranja); font-size: 14px; font-weight: 600; margin-bottom: 12px; }
@@ -816,7 +824,7 @@
 <!-- ══ MENTOR INTRO ══ -->
 <div class="mentor-intro">
   <div class="mentor-inner">
-    <div class="mentor-avatar">👤</div>
+    <div class="mentor-avatar"><img src="/public/prints/ze.jpg" alt="José Mauro" /></div>
     <div class="mentor-text">
       <h3>José Mauro</h3>
       <div class="handle">@zemauroseller no Instagram</div>
@@ -1517,7 +1525,7 @@ LUCRO = Preço de Venda
       </div>
       <div class="depo-texto">"Boaa cara 😎 produto validado" — resultado do dia após aplicar o método de validação com AvantPro.</div>
       <div class="depo-print">
-        <img src="prints/max-resultado.jpg" alt="Print do painel Shopee - Max Acessórios R$5.010 em um dia" loading="lazy" />
+        <img src="/public/prints/max-resultado.jpeg" alt="Print do painel Shopee - Max Acessórios R$5.010 em um dia" loading="lazy" />
       </div>
     </div>
 
@@ -1536,7 +1544,7 @@ LUCRO = Preço de Venda
       </div>
       <div class="depo-texto">"Nunca imaginei que ia chegar nos 5k... imagina em 7? Que loucura. Obrigado Zé pelos ensinamentos. Glórias a Deus!"</div>
       <div class="depo-print">
-        <img src="prints/lucas-resultado.jpg" alt="Print do painel Shopee - Lucas Silva R$7.130 em uma noite" loading="lazy" />
+        <img src="/public/prints/lucas-resultado.jpeg" alt="Print do painel Shopee - Lucas Silva R$7.130 em uma noite" loading="lazy" />
       </div>
     </div>
 
@@ -1555,7 +1563,7 @@ LUCRO = Preço de Venda
       </div>
       <div class="depo-texto">"Bom dia, nunca vendi tanto! Quando fui dormir estava em 13k. Não liguei o PC ainda pra ver o total." — mensagem enviada às 7h da manhã.</div>
       <div class="depo-print">
-        <img src="prints/dodo-conversa.jpg" alt="Print da conversa WhatsApp - Dodo nunca vendi tanto, 13k+" loading="lazy" />
+        <img src="/public/prints/dodo-conversa.jpeg" alt="Print da conversa WhatsApp - Dodo nunca vendi tanto, 13k+" loading="lazy" />
       </div>
     </div>
 
@@ -1574,7 +1582,7 @@ LUCRO = Preço de Venda
       </div>
       <div class="depo-texto">"Fim de semana foi top demais!" — 498 pedidos a enviar, zero problemas, operação rodando redonda.</div>
       <div class="depo-print">
-        <img src="prints/luana-resultado.jpg" alt="Print do painel Shopee - Luana Candido 498 pedidos no fim de semana" loading="lazy" />
+        <img src="/public/prints/luana-resultado.jpeg" alt="Print do painel Shopee - Luana Candido 498 pedidos no fim de semana" loading="lazy" />
       </div>
     </div>
 
@@ -1672,16 +1680,8 @@ LUCRO = Preço de Venda
   <!-- Prints reais do painel Shopee da Vânia — sem edição -->
   <div class="vania-prints">
     <div class="vania-print-item">
-      <img src="prints/vania-produto1.jpg" alt="Print painel Shopee Vânia - R$20,94mil em um dia" loading="lazy" />
+      <img src="/public/prints/vania-produto1.jpeg" alt="Print painel Shopee Vânia - R$20,94mil em um dia" loading="lazy" />
     </div>
-    <div class="vania-print-item">
-      <img src="prints/vania-produto2.jpg" alt="Print painel Shopee Vânia - R$19,16mil em um dia" loading="lazy" />
-    </div>
-  </div>
-
-  <!-- Print da conversa WhatsApp — sem edição -->
-  <div class="vania-print-conversa">
-    <img src="prints/vania-conversa.jpg" alt="Print conversa WhatsApp - E a Vânia passou dos R$40k" loading="lazy" />
   </div>
 
   <div class="vania-bubbles" id="vaniaBubbles">
