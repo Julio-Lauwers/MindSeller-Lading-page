@@ -26,23 +26,23 @@
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --laranja: #EE4D2D;
-      --laranja-dark: #C73D1F;
-      --laranja-light: #FFF3F0;
+      --laranja: #FED700;
+      --laranja-dark: #9B7D47;
+      --laranja-light: rgba(254,215,0,0.08);
       --verde: #27AE60;
-      --verde-light: #EAFAF1;
-      --amarelo: #F39C12;
-      --amarelo-light: #FEF9E7;
-      --azul: #2980B9;
-      --azul-light: #EBF5FB;
-      --cinza-bg: #F8F9FA;
-      --cinza-borda: #E5E7EB;
-      --texto: #1A1A2E;
-      --texto-suave: #6B7280;
+      --verde-light: rgba(39,174,96,0.14);
+      --amarelo: #F2A93B;
+      --amarelo-light: rgba(242,169,59,0.14);
+      --azul: #3B9EDB;
+      --azul-light: rgba(59,158,219,0.14);
+      --cinza-bg: rgba(255,255,255,0.04);
+      --cinza-borda: #252525;
+      --texto: #FFFFFF;
+      --texto-suave: rgba(255,255,255,0.7);
       --branco: #FFFFFF;
       --ouro: #FFD700;
     }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: var(--cinza-bg); color: var(--texto); line-height: 1.6; }
+    body { font-family: 'Poppins', sans-serif; background: #0F0F0F; color: var(--texto); line-height: 1.6; }
 
     /* ── HERO ── */
     .hero {
@@ -58,7 +58,7 @@
       position: absolute;
       top: -60px; right: -60px;
       width: 300px; height: 300px;
-      background: radial-gradient(circle, rgba(238,77,45,0.15) 0%, transparent 70%);
+      background: radial-gradient(circle, rgba(254,215,0,0.15) 0%, transparent 70%);
       border-radius: 50%;
     }
     .hero-badge {
@@ -101,7 +101,7 @@
 
     /* ── MENTOR INTRO ── */
     .mentor-intro {
-      background: var(--branco);
+      background: #1A1A1A;
       border-bottom: 2px solid var(--cinza-borda);
     }
     .mentor-inner {
@@ -140,14 +140,14 @@
       padding: 4px 12px;
       border-radius: 20px;
     }
-    .mbadge-laranja { background: var(--laranja-light); color: var(--laranja-dark); }
-    .mbadge-ouro { background: #FEF9E7; color: #856404; }
-    .mbadge-verde { background: var(--verde-light); color: #155724; }
+    .mbadge-laranja { background: var(--laranja-light); color: var(--laranja); }
+    .mbadge-ouro { background: var(--amarelo-light); color: var(--amarelo); }
+    .mbadge-verde { background: var(--verde-light); color: var(--verde); }
 
     /* ── NAV STICKY ── */
     .nav-sticky {
       position: sticky; top: 0; z-index: 100;
-      background: var(--branco);
+      background: #1A1A1A;
       border-bottom: 2px solid var(--cinza-borda);
       overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none;
     }
@@ -174,21 +174,21 @@
       text-transform: uppercase; padding: 5px 14px;
       border-radius: 20px; margin-bottom: 12px;
     }
-    .fase-1 .fase-label { background: #FFF3CD; color: #856404; }
-    .fase-2 .fase-label { background: #D1ECF1; color: #0C5460; }
-    .fase-3 .fase-label { background: #D4EDDA; color: #155724; }
-    .fase-4 .fase-label { background: #CCE5FF; color: #004085; }
-    .fase-5 .fase-label { background: #F8D7DA; color: #721C24; }
+    .fase-1 .fase-label { background: var(--amarelo-light); color: var(--amarelo); }
+    .fase-2 .fase-label { background: rgba(23,162,184,0.14); color: #22C3DE; }
+    .fase-3 .fase-label { background: var(--verde-light); color: var(--verde); }
+    .fase-4 .fase-label { background: var(--azul-light); color: var(--azul); }
+    .fase-5 .fase-label { background: rgba(224,82,96,0.14); color: #E05260; }
     .fase-header h2 { font-size: clamp(20px, 4vw, 28px); font-weight: 800; margin-bottom: 8px; }
     .fase-header p { color: var(--texto-suave); font-size: 15px; }
 
     /* ── ERRO CARD ── */
     .erro-card {
-      background: var(--branco); border-radius: 16px;
+      background: #1A1A1A; border-radius: 16px;
       border: 1px solid var(--cinza-borda); margin-bottom: 20px;
       overflow: hidden; transition: box-shadow 0.2s;
     }
-    .erro-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+    .erro-card:hover { border-color: rgba(254,215,0,0.25); box-shadow: 0 8px 32px rgba(0,0,0,0.4); }
     .erro-header { display: flex; align-items: flex-start; gap: 16px; padding: 24px 24px 0; }
     .erro-num {
       flex-shrink: 0; width: 48px; height: 48px; border-radius: 12px;
@@ -204,21 +204,21 @@
     .erro-title { font-size: clamp(15px, 2.5vw, 18px); font-weight: 700; line-height: 1.3; margin-bottom: 6px; }
     .erro-tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tag { font-size: 11px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
-    .tag-verde { background: #D4EDDA; color: #155724; }
-    .tag-amarelo { background: #FFF3CD; color: #856404; }
-    .tag-azul { background: #CCE5FF; color: #004085; }
+    .tag-verde { background: var(--verde-light); color: var(--verde); }
+    .tag-amarelo { background: var(--amarelo-light); color: var(--amarelo); }
+    .tag-azul { background: var(--azul-light); color: var(--azul); }
     .erro-body { padding: 20px 24px 24px; }
 
     /* ── BLOCOS ── */
     .bloco { border-radius: 10px; padding: 16px; margin-bottom: 14px; }
     .bloco:last-child { margin-bottom: 0; }
     .bloco-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 8px; }
-    .bloco-problema { background: #FFF3F0; border-left: 3px solid var(--laranja); }
+    .bloco-problema { background: var(--laranja-light); border-left: 3px solid var(--laranja); }
     .bloco-problema .bloco-label { color: var(--laranja); }
     .bloco-solucao { background: var(--verde-light); border-left: 3px solid var(--verde); }
     .bloco-solucao .bloco-label { color: var(--verde); }
     .bloco-atencao { background: var(--amarelo-light); border-left: 3px solid var(--amarelo); }
-    .bloco-atencao .bloco-label { color: #856404; }
+    .bloco-atencao .bloco-label { color: var(--amarelo); }
     .bloco-dica { background: var(--azul-light); border-left: 3px solid var(--azul); }
     .bloco-dica .bloco-label { color: var(--azul); }
     .bloco p { font-size: 14px; line-height: 1.6; }
@@ -259,13 +259,13 @@
 
     /* ── MÉTRICA GRID ── */
     .metrica-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 14px; }
-    .metrica-item { background: var(--branco); border: 1px solid var(--cinza-borda); border-radius: 10px; padding: 14px; }
+    .metrica-item { background: #1A1A1A; border: 1px solid var(--cinza-borda); border-radius: 10px; padding: 14px; }
     .metrica-nome { font-size: 12px; font-weight: 700; color: var(--texto-suave); margin-bottom: 4px; }
     .metrica-meta { font-size: 16px; font-weight: 800; color: var(--azul); }
 
     /* ── CAMPANHA GRID ── */
     .campanha-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 14px; }
-    .campanha-item { background: var(--laranja-light); border: 1px solid #F5C6C0; border-radius: 10px; padding: 14px; text-align: center; }
+    .campanha-item { background: var(--laranja-light); border: 1px solid rgba(254,215,0,0.25); border-radius: 10px; padding: 14px; text-align: center; }
     .campanha-data { font-size: 22px; font-weight: 800; color: var(--laranja); }
     .campanha-nome { font-size: 12px; font-weight: 600; color: var(--texto-suave); margin-top: 2px; }
 
@@ -278,7 +278,7 @@
     /* ── PASSOS ── */
     .passos { }
     .passo { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px; }
-    .passo-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--laranja); color: var(--branco); font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+    .passo-num { flex-shrink: 0; width: 28px; height: 28px; border-radius: 50%; background: var(--laranja); color: #1A1A2E; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
     .passo p { font-size: 14px; padding-top: 4px; }
 
     /* ── FÓRMULA ── */
@@ -296,7 +296,7 @@
     .depoimentos-header .section-badge {
       display: inline-block;
       background: var(--laranja-light);
-      color: var(--laranja-dark);
+      color: var(--laranja);
       font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
       text-transform: uppercase; padding: 5px 16px; border-radius: 20px; margin-bottom: 12px;
     }
@@ -308,7 +308,7 @@
       gap: 16px;
     }
     .depo-card {
-      background: var(--branco);
+      background: #1A1A1A;
       border: 1px solid var(--cinza-borda);
       border-radius: 14px;
       padding: 20px;
@@ -338,7 +338,7 @@
       display: flex; align-items: center; gap: 8px;
     }
     .depo-resultado-num { font-size: 18px; font-weight: 800; color: var(--verde); }
-    .depo-resultado-label { font-size: 12px; color: #155724; line-height: 1.3; }
+    .depo-resultado-label { font-size: 12px; color: var(--verde); line-height: 1.3; }
     .depo-texto { font-size: 13px; color: var(--texto-suave); line-height: 1.6; font-style: italic; }
     .depo-placeholder {
       border: 2px dashed var(--cinza-borda);
@@ -352,7 +352,7 @@
 
     /* ── MENTORIA PREVIEW ── */
     .mentoria-section {
-      background: var(--branco);
+      background: #1A1A1A;
       border-radius: 16px;
       border: 1px solid var(--cinza-borda);
       padding: 36px 32px;
@@ -360,7 +360,7 @@
     }
     .mentoria-section .section-badge {
       display: inline-block;
-      background: var(--laranja-light); color: var(--laranja-dark);
+      background: var(--laranja-light); color: var(--laranja);
       font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
       text-transform: uppercase; padding: 5px 16px; border-radius: 20px; margin-bottom: 14px;
     }
@@ -384,7 +384,7 @@
     .mentoria-item p { font-size: 13px; color: var(--texto-suave); line-height: 1.5; }
 
     /* ── QUICK REFERENCE ── */
-    .qr-section { background: var(--branco); border-radius: 16px; border: 1px solid var(--cinza-borda); padding: 32px; margin: 32px 0 0; }
+    .qr-section { background: #1A1A1A; border-radius: 16px; border: 1px solid var(--cinza-borda); padding: 32px; margin: 32px 0 0; }
     .qr-section h3 { font-size: 20px; font-weight: 800; margin-bottom: 20px; }
     .qr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
     .qr-item { background: var(--cinza-bg); border-radius: 10px; padding: 16px; }
@@ -417,12 +417,12 @@
     .cta-card h4 { font-size: 16px; font-weight: 700; margin-bottom: 5px; }
     .cta-card p { font-size: 13px; color: rgba(255,255,255,0.7); margin-bottom: 10px; line-height: 1.5; }
     .cta-keyword { display: inline-block; background: var(--ouro); color: #1A1A2E; font-size: 13px; font-weight: 800; padding: 5px 14px; border-radius: 8px; }
-    .cta-card.destaque { background: rgba(238,77,45,0.2); border-color: rgba(238,77,45,0.5); }
+    .cta-card.destaque { background: rgba(254,215,0,0.2); border-color: rgba(254,215,0,0.5); }
     .cta-assinatura { font-size: 15px; color: rgba(255,255,255,0.6); }
     .cta-assinatura strong { color: var(--branco); }
 
     /* ── FOOTER ── */
-    .footer { text-align: center; padding: 28px 16px; color: var(--texto-suave); font-size: 13px; background: var(--branco); border-top: 1px solid var(--cinza-borda); }
+    .footer { text-align: center; padding: 28px 16px; color: var(--texto-suave); font-size: 13px; background: #1A1A1A; border-top: 1px solid var(--cinza-borda); }
 
     /* ── VANIA SECTION ── */
     .vania-section {
@@ -538,7 +538,7 @@
 
     /* ── ROADMAP ── */
     .roadmap-section {
-      background: var(--branco);
+      background: #1A1A1A;
       padding: 56px 24px;
       border-bottom: 2px solid var(--cinza-borda);
     }
@@ -549,7 +549,7 @@
     }
     .roadmap-header .section-badge {
       display: inline-block;
-      background: var(--laranja-light); color: var(--laranja-dark);
+      background: var(--laranja-light); color: var(--laranja);
       font-size: 11px; font-weight: 700; letter-spacing: 1.5px;
       text-transform: uppercase; padding: 5px 16px; border-radius: 20px; margin-bottom: 12px;
     }
@@ -586,8 +586,8 @@
     .roadmap-step:hover .step-circle {
       background: var(--laranja);
       border-color: var(--laranja);
-      color: var(--branco);
-      box-shadow: 0 0 0 6px rgba(238,77,45,0.12);
+      color: #1A1A2E;
+      box-shadow: 0 0 0 6px rgba(254,215,0,0.12);
     }
     .step-line {
       width: 2px;
@@ -631,7 +631,7 @@
     }
     .roadmap-step.open .step-toggle {
       background: var(--laranja); border-color: var(--laranja);
-      color: var(--branco); transform: rotate(45deg);
+      color: #1A1A2E; transform: rotate(45deg);
     }
     .step-teaser {
       font-size: 14px; color: var(--texto-suave);
@@ -665,7 +665,7 @@
       padding: 10px 14px;
       font-size: 13px;
       font-weight: 600;
-      color: var(--laranja-dark);
+      color: var(--laranja);
       margin-top: 10px;
     }
 
@@ -1505,7 +1505,7 @@ LUCRO = Preço de Venda
     <!-- Max Acessórios -->
     <div class="depo-card">
       <div class="depo-top">
-        <div class="depo-avatar" style="background:linear-gradient(135deg,#EE4D2D,#C73D1F);">M</div>
+        <div class="depo-avatar" style="background:linear-gradient(135deg,var(--laranja),var(--laranja-dark));">M</div>
         <div class="depo-info">
           <div class="depo-nome">Max Acessórios</div>
           <div class="depo-origem">Aluno da Mentoria</div>
@@ -1709,13 +1709,12 @@ LUCRO = Preço de Venda
     <div class="wpp-badge">📱 Oferta exclusiva para quem leu até aqui</div>
     <h2>Entre em contato agora<br>e ganhe uma <em>reunião gratuita</em><br>com @zemauroseller</h2>
     <p>30 minutos direto com quem já vendeu mais de R$11 milhões na Shopee. Sem compromisso — entendo sua situação e mostro exatamente o que você precisa fazer agora.</p>
-    <a href="https://wa.me/55[SEU_NUMERO_WHATSAPP]?text=Oi%20José%20Mauro!%20Li%20o%20guia%20e%20quero%20a%20reunião%20gratuita%20%F0%9F%99%8C" class="wpp-btn" target="_blank" rel="noopener">
+    <a href="https://wa.me/5527998211465?text=Oi%20José%20Mauro!%20Li%20o%20guia%20e%20quero%20a%20reunião%20gratuita%20%F0%9F%99%8C" class="wpp-btn" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
       </svg>
       Chamar no WhatsApp agora
     </a>
-    <p class="wpp-disclaimer">⚠️ Substituir [SEU_NUMERO_WHATSAPP] pelo número real antes de publicar · ex: 5511999999999</p>
   </div>
 </section>
 
@@ -1759,7 +1758,7 @@ LUCRO = Preço de Venda
 
 <div class="footer">
   <p>Guia gratuito criado por <strong>José Mauro</strong> · Influencer Oficial Shopee · <a href="https://instagram.com/zemauroseller" style="color:var(--laranja);text-decoration:none;">@zemauroseller</a></p>
-  <p style="margin-top:6px;color:#9CA3AF;">Conteúdo educacional. Resultados variam conforme nicho, dedicação e execução.</p>
+  <p style="margin-top:6px;color:rgba(255,255,255,0.4);">Conteúdo educacional. Resultados variam conforme nicho, dedicação e execução.</p>
 </div>
 
 <script>
