@@ -14,3 +14,9 @@ export function getPostHtml(slug: string): string | null {
   if (!fs.existsSync(filePath)) return null
   return fs.readFileSync(filePath, 'utf-8')
 }
+
+export interface BlogPost {
+  // ...campos existentes
+  cover: string;
+  coverAlt: string;
+}
