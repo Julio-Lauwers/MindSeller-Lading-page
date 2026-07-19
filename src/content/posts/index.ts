@@ -11,6 +11,7 @@ export interface BlogPost {
   title: string
   excerpt: string
   date: string // formato YYYY-MM-DD
+  cover: string
   coverAlt: string
 }
 
@@ -21,6 +22,7 @@ export const BLOG_POSTS: BlogPost[] = [
     excerpt:
       'Descubra os erros mais comuns que fazem vendedores perderem dinheiro na Shopee e como evitá-los.',
     date: '2026-07-01',
+    cover: '/Mentor-shopee.jpeg',
     coverAlt: 'Erros comuns que fazem vendedores perderem dinheiro na Shopee',
   },
 ]
