@@ -1,0 +1,40 @@
+.page {
+  background: #050505;
+}
+
+.heroSection {
+  padding: 100px 0 60px;
+  background: linear-gradient(180deg, rgba(8, 16, 23, 0.96), rgba(8, 16, 23, 1));
+}
+
+.heroInner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #22c55e;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.82rem;
+  margin-bottom: 18px;
+}
+
+.title {
+  color: #f8fafc;
+  font-size: clamp(2.5rem, 4vw, 4.2rem);
+  line-height: 1.04;
+  margin: 0 0 20px;
+}
+
+.subtitle {
+  color: #cbd5e1;
+  max-width: 720px;
+  font-size: 1rem;
+  line-height: 1.8;
+}
