@@ -31,13 +31,6 @@ const ferramentas: Ferramenta[] = [
     link: '',
     locked: true,
   },
-  {
-    titulo: 'Operação sem estoque',
-    descricao: 'Quer começar a vender sem precisar de estoque? Descubra como montar uma operação de sucesso com fornecedores confiáveis e estratégias de vendas inteligentes.',
-    imagem: '/baner mindsupply.png',
-    link: 'https://mindsupply.app',
-    locked: false,
-  },
 ]
 
 export default function ToolsSection() {
