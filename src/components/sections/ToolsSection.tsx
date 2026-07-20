@@ -21,7 +21,7 @@ const ferramentas: Ferramenta[] = [
     titulo: 'Calculadora de ROAS - Shopee Ads',
     descricao: 'Calculadora inteligente de ROAS para anúncios na Shopee. Conecte sua loja ou insira dados manualmente para calcular metas de break-even e otimizar seus lucros com gráficos de desempenho em tempo real.',
     imagem: '/banner calculadora roas.png', 
-    link: 'https://calculadora-roas-mindseller.base44.app',
+    link: 'https://calculadora-roas.base44.app',
     locked: false,
   },
   {
