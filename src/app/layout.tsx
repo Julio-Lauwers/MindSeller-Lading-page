@@ -20,8 +20,9 @@ export const metadata: Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200',
-        width: 1200,
+        url: '/LOGO%20MINDSELLER%20-%20M.pdf.png',
+        width: 587,
+        height: 475,
         alt: 'Mindseller',
       },
     ],
